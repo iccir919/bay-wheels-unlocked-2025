@@ -15,10 +15,10 @@ export function createLocalClient() {
     return {
         // --- Low-Level DDL/Schema Method (for init-schema.js) ---
         async runSQL(sql) {
-            const client = await pgPool.connect();
+            const client = await pgPool.connect()
             try {
-                console.log('[LocalClient] Executing DDL/Schema SQL...');
-                await client.query(sql);
+                console.log('[LocalClient] Executing DDL/Schema SQL...')
+                await client.query(sql)
                 return { error: null };
             } catch (error) {
                 console.error(`[LocalClient] Error running schema SQL: ${error.message}`);
@@ -123,5 +123,5 @@ export function createLocalClient() {
             await pgPool.end();
             console.log('[LocalClient] Connection pool closed.');
         }
-    };
+    }
 }
