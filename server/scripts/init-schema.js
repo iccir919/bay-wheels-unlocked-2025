@@ -7,7 +7,7 @@ import db from "../db/index.js"
 // PostgreSQL Schema Definition (works for both Supabase and Local PG)
 const SCHEMA_SQL = `
 -- ============================================
--- DROP EXISTING TABLES 
+-- DROP EXISTING TABLES (Clean Slate)
 -- ============================================
 DROP TABLE IF EXISTS trips CASCADE;
 DROP TABLE IF EXISTS stations CASCADE;
@@ -20,29 +20,28 @@ DROP TABLE IF EXISTS stations CASCADE;
 CREATE TABLE IF NOT EXISTS stations (
   station_id TEXT PRIMARY KEY,
   name TEXT NOT NULL,
-  latitude DECIMAL(10, 8),
-  longitude DECIMAL(11, 8),
+  latitude DOUBLE PRECISION,
+  longitude DOUBLE PRECISION,
   created_at TIMESTAMP DEFAULT NOW(),
   updated_at TIMESTAMP DEFAULT NOW()
 );
 
--- Trips table (core data, holds only 2025 data)
+-- Trips table (Core data for 2025)
 CREATE TABLE IF NOT EXISTS trips (
   trip_id BIGSERIAL PRIMARY KEY,
   ride_id TEXT UNIQUE NOT NULL,
   rideable_type TEXT,
   started_at TIMESTAMP NOT NULL,
   ended_at TIMESTAMP NOT NULL,
-  duration_seconds INT,  -- NEW: Pre-calculated duration
+  duration_seconds INT,
   start_station_name TEXT,
-  -- Added ON DELETE SET NULL for better data management
   start_station_id TEXT REFERENCES stations(station_id) ON DELETE SET NULL, 
   end_station_name TEXT,
   end_station_id TEXT REFERENCES stations(station_id) ON DELETE SET NULL, 
-  start_lat DECIMAL(10, 8),
-  start_lng DECIMAL(11, 8),
-  end_lat DECIMAL(10, 8),
-  end_lng DECIMAL(11, 8),
+  start_lat DOUBLE PRECISION,
+  start_lng DOUBLE PRECISION,
+  end_lat DOUBLE PRECISION,
+  end_lng DOUBLE PRECISION,
   member_casual TEXT,
   created_at TIMESTAMP DEFAULT NOW()
 );
@@ -54,28 +53,26 @@ CREATE TABLE IF NOT EXISTS trips (
 -- Time-based indexes
 CREATE INDEX IF NOT EXISTS idx_trips_started_at ON trips(started_at);
 CREATE INDEX IF NOT EXISTS idx_trips_ended_at ON trips(ended_at);
-CREATE INDEX IF NOT EXISTS idx_trips_started_at_month ON trips (DATE_TRUNC('month', started_at));
 
--- Station indexes
--- Speeds up lookups on trips table using foreign keys
+-- Simple DATE_TRUNC without timezone conversion is IMMUTABLE
+CREATE INDEX IF NOT EXISTS idx_trips_started_at_month 
+ON trips (DATE_TRUNC('month', started_at));
+
+-- Station and Relationship indexes
 CREATE INDEX IF NOT EXISTS idx_trips_start_station ON trips(start_station_id);
 CREATE INDEX IF NOT EXISTS idx_trips_end_station ON trips(end_station_id);
-
--- Composite index for common time/station queries (e.g., "how many trips started at station X in month Y")
-CREATE INDEX IF NOT EXISTS idx_trips_started_at_station ON trips(started_at, start_station_id);
-
--- Filter indexes (Speeds up queries filtered by user type or bike type)
-CREATE INDEX IF NOT EXISTS idx_trips_member_casual ON trips(member_casual);
-CREATE INDEX IF NOT EXISTS idx_trips_rideable_type ON trips(rideable_type);
--- Speeds up queries that look at specific routes (start_id -> end_id)
 CREATE INDEX IF NOT EXISTS idx_trips_start_end_stations ON trips(start_station_id, end_station_id);
 
+-- Filter/Facet indexes
+CREATE INDEX IF NOT EXISTS idx_trips_member_casual ON trips(member_casual);
+CREATE INDEX IF NOT EXISTS idx_trips_rideable_type ON trips(rideable_type);
+
 
 -- ============================================
--- FUNCTIONS (Utility for Views and Queries)
+-- FUNCTIONS
 -- ============================================
 
--- 1. Format duration in seconds into HH:MI:SS string (Updated to handle negative/null)
+-- 1. Format duration into HH:MI:SS
 CREATE OR REPLACE FUNCTION format_duration(seconds_input INT)
 RETURNS TEXT AS $$
 SELECT
@@ -88,10 +85,10 @@ SELECT
     END;
 $$ LANGUAGE SQL IMMUTABLE;
 
--- 2. Calculate Haversine distance between two points (Updated to handle NULL coordinates)
+-- 2. Haversine distance calculation
 CREATE OR REPLACE FUNCTION haversine_distance(
-    lat1 DOUBLE PRECISION, lon1 DOUBLE PRECISION,  -- CHANGED FROM DECIMAL
-    lat2 DOUBLE PRECISION, lon2 DOUBLE PRECISION,  -- CHANGED FROM DECIMAL
+    lat1 DOUBLE PRECISION, lon1 DOUBLE PRECISION,
+    lat2 DOUBLE PRECISION, lon2 DOUBLE PRECISION,
     units TEXT DEFAULT 'miles'
 )
 RETURNS NUMERIC AS $$
@@ -104,7 +101,6 @@ DECLARE
     a NUMERIC;
     c NUMERIC;
 BEGIN
-    -- Return NULL if any coordinate is NULL
     IF lat1 IS NULL OR lon1 IS NULL OR lat2 IS NULL OR lon2 IS NULL THEN
         RETURN NULL;
     END IF;
@@ -120,63 +116,114 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql IMMUTABLE;
 
--- 3. Trip Categorization (Classify trip length for analysis)
+-- 3. Categorization logic
 CREATE OR REPLACE FUNCTION categorize_trip_duration(duration_seconds INT)
 RETURNS TEXT AS $$
 BEGIN
-    IF duration_seconds <= 600 THEN
-        RETURN '0-10 Min (Short)';
-    ELSIF duration_seconds <= 1800 THEN
-        RETURN '10-30 Min (Medium)';
-    ELSIF duration_seconds <= 3600 THEN
-        RETURN '30-60 Min (Long)';
-    ELSE
-        RETURN '> 60 Min (Extended)';
+    IF duration_seconds <= 600 THEN RETURN '0-10 Min (Short)';
+    ELSIF duration_seconds <= 1800 THEN RETURN '10-30 Min (Medium)';
+    ELSIF duration_seconds <= 3600 THEN RETURN '30-60 Min (Long)';
+    ELSE RETURN '> 60 Min (Extended)';
     END IF;
 END;
 $$ LANGUAGE plpgsql IMMUTABLE;
 
 
 -- ============================================
--- VIEWS (Standard, On-Demand Calculation)
+-- VIEWS
 -- ============================================
 
--- V1. Monthly Summary View 
+-- V1. Monthly Summary 
 CREATE OR REPLACE VIEW trips_monthly_summary_2025 AS
 SELECT
+    TO_CHAR(DATE_TRUNC('month', started_at), 'YYYY-MM') AS month_year,
     DATE_TRUNC('month', started_at) AS month,
     COUNT(*) AS total_trips,
-    AVG(duration_seconds) AS avg_duration_seconds, -- NEW
-    format_duration(CAST(AVG(duration_seconds) AS INT)) AS avg_duration_formatted, 
-    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY duration_seconds) AS median_duration_seconds, 
+    
+    -- Duration metrics
+    AVG(duration_seconds) AS avg_duration_seconds,
+    ROUND((AVG(duration_seconds) / 60.0)::NUMERIC, 2) AS avg_duration_minutes,
+    format_duration(CAST(AVG(duration_seconds) AS INT)) AS avg_duration_formatted,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY duration_seconds) AS median_duration_seconds,
+    
+    -- Distance metrics IN MILES
+    ROUND(
+        SUM(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
+        2
+    ) AS total_distance_miles,
+    ROUND(
+        AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
+        2
+    ) AS avg_distance_miles,
+    
+    -- User type breakdown
     COUNT(*) FILTER (WHERE member_casual = 'member') AS member_trips,
     COUNT(*) FILTER (WHERE member_casual = 'casual') AS casual_trips,
-    (COUNT(*) FILTER (WHERE member_casual = 'member') * 100.0 / COUNT(*)) AS member_trip_percentage,
-    AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')) AS avg_trip_distance_miles,
-    MODE() WITHIN GROUP (ORDER BY EXTRACT(HOUR FROM started_at)) AS most_popular_start_hour_24h
+    ROUND(
+        (100.0 * COUNT(*) FILTER (WHERE member_casual = 'member') / COUNT(*))::NUMERIC, 
+        1
+    ) AS member_percentage,
+    
+    -- Station metrics
+    COUNT(DISTINCT start_station_id) AS unique_start_stations,
+    COUNT(DISTINCT end_station_id) AS unique_end_stations
 FROM trips
-GROUP BY 1
+GROUP BY 1, 2
 ORDER BY month;
 
--- V2. Yearly Summary View 
+-- V2. Yearly Summary 
 CREATE OR REPLACE VIEW trips_yearly_summary_2025 AS
 SELECT
     EXTRACT(YEAR FROM started_at) AS year,
     COUNT(*) AS total_trips,
-    AVG(duration_seconds) AS avg_duration_seconds, -- NEW
-    format_duration(CAST(AVG(duration_seconds) AS INT)) AS avg_duration_formatted, 
-    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY duration_seconds) AS median_duration_seconds, 
+    
+    -- Duration metrics
+    ROUND((AVG(duration_seconds) / 60.0)::NUMERIC, 2) AS avg_duration_minutes,
+    format_duration(CAST(AVG(duration_seconds) AS INT)) AS avg_duration_formatted,
+    ROUND(
+        (PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY duration_seconds) / 60.0)::NUMERIC, 
+        2
+    ) AS median_duration_minutes,
+    
+    -- Distance metrics IN MILES
+    ROUND(
+        SUM(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
+        2
+    ) AS total_distance_miles,
+    ROUND(
+        AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
+        2
+    ) AS avg_distance_miles,
+    
+    -- User type breakdown
     COUNT(*) FILTER (WHERE member_casual = 'member') AS member_trips,
     COUNT(*) FILTER (WHERE member_casual = 'casual') AS casual_trips,
-    (COUNT(*) FILTER (WHERE member_casual = 'member') * 100.0 / COUNT(*)) AS member_trip_percentage,
-    AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')) AS avg_trip_distance_miles,
-    COUNT(DISTINCT start_station_id) AS unique_start_stations,
-    COUNT(DISTINCT end_station_id) AS unique_end_stations
+    ROUND(
+        (100.0 * COUNT(*) FILTER (WHERE member_casual = 'member') / COUNT(*))::NUMERIC, 
+        1
+    ) AS member_percentage,
+    
+    -- Station metrics
+    (
+        SELECT COUNT(DISTINCT station_id) 
+        FROM (
+            SELECT DISTINCT start_station_id AS station_id FROM trips WHERE EXTRACT(YEAR FROM started_at) = 2025
+            UNION
+            SELECT DISTINCT end_station_id AS station_id FROM trips WHERE EXTRACT(YEAR FROM started_at) = 2025
+        ) AS all_stations
+        WHERE station_id IS NOT NULL
+    ) AS unique_stations,
+    
+    -- Rideable type breakdown
+    COUNT(*) FILTER (WHERE rideable_type = 'electric_bike') AS electric_bike_trips,
+    COUNT(*) FILTER (WHERE rideable_type = 'classic_bike') AS classic_bike_trips,
+    COUNT(*) FILTER (WHERE rideable_type = 'docked_bike') AS docked_bike_trips
 FROM trips
 WHERE EXTRACT(YEAR FROM started_at) = 2025
-GROUP BY 1; 
+GROUP BY 1;
 
--- V3. Route Detail View
+
+-- V3. Route Detail 
 CREATE OR REPLACE VIEW route_detail_2025 AS
 SELECT
     start_station_name,
@@ -184,32 +231,63 @@ SELECT
     start_station_id,
     end_station_id,
     COUNT(ride_id) AS trips_on_route,
-    AVG(EXTRACT(EPOCH FROM (ended_at - started_at))) AS avg_duration_seconds,
-    AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')) AS avg_distance_miles,
+    
+    -- Duration metrics
+    AVG(duration_seconds) AS avg_duration_seconds,
+    ROUND((AVG(duration_seconds) / 60.0)::NUMERIC, 2) AS avg_duration_minutes,
+    
+    -- Distance metrics (both miles and km for flexibility)
+    ROUND(
+        AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
+        2
+    ) AS avg_distance_miles,
+    ROUND(
+        AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'km')), 
+        2
+    ) AS avg_distance_km,
+    
+    -- User type on this route
     COUNT(*) FILTER (WHERE member_casual = 'member') AS member_trips,
-    COUNT(*) FILTER (WHERE member_casual = 'casual') AS casual_trips
+    COUNT(*) FILTER (WHERE member_casual = 'casual') AS casual_trips,
+    
+    -- Most common bike type on this route
+    MODE() WITHIN GROUP (ORDER BY rideable_type) AS most_common_bike_type
 FROM trips
-WHERE
-    start_station_id IS NOT NULL AND end_station_id IS NOT NULL
+WHERE start_station_id IS NOT NULL AND end_station_id IS NOT NULL
 GROUP BY 1, 2, 3, 4
-HAVING COUNT(ride_id) > 10
+HAVING COUNT(ride_id) > 5
 ORDER BY trips_on_route DESC;
 
--- V4. Trip Category Distribution View (NEW: Segment trips by duration category and user type)
+
+-- V4. Trip Category Distribution 
 CREATE OR REPLACE VIEW trips_category_distribution_2025 AS
 SELECT
-    categorize_trip_duration(duration_seconds) AS trip_duration_category,
+    categorize_trip_duration(duration_seconds) AS duration_category,
     member_casual,
-    COUNT(ride_id) AS total_trips_in_segment,
+    COUNT(ride_id) AS trip_count,
+    
+    -- Additional metrics per category
+    ROUND((AVG(duration_seconds) / 60.0)::NUMERIC, 2) AS avg_duration_minutes,
     ROUND(
-        COUNT(ride_id) * 100.0 / SUM(COUNT(ride_id)) OVER (PARTITION BY member_casual),
+        AVG(haversine_distance(start_lat, start_lng, end_lat, end_lng, 'miles')), 
         2
-    ) AS percentage_of_customer_trips
+    ) AS avg_distance_miles,
+    
+    -- Percentage of total trips
+    ROUND(
+        (100.0 * COUNT(ride_id) / SUM(COUNT(ride_id)) OVER ())::NUMERIC, 
+        2
+    ) AS percentage_of_total
 FROM trips
-WHERE
-    EXTRACT(EPOCH FROM (ended_at - started_at)) BETWEEN 60 AND 86400 -- Filter for valid durations
 GROUP BY 1, 2
-ORDER BY member_casual, total_trips_in_segment DESC;
+ORDER BY 
+    CASE categorize_trip_duration(duration_seconds)
+        WHEN '0-10 Min (Short)' THEN 1
+        WHEN '10-30 Min (Medium)' THEN 2
+        WHEN '30-60 Min (Long)' THEN 3
+        WHEN '> 60 Min (Extended)' THEN 4
+    END,
+    member_casual;
 `
 
 async function initSchema() {
