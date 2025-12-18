@@ -1,13 +1,24 @@
 const API_BASE_URL = "http://localhost:3000/api/trips"
 
-export const fetchYearlySummary = async () => {
-    const response = await fetch(`${API_BASE_URL}/summary/yearly`)
-    const result = response.json()
-    return result.data
+const handleResponse = async (response) => {
+    if (!response.ok) {
+    const contentType = response.headers.get('content-type')
+    let errorMessage = 'API request failed'
+
+    if (contentType?.includes('application/json')) {
+        const errorData = await response.json()
+        errorMessage = errorData.message || errorMessage
+    } else {
+        errorMessage = await response.text()
+    }
+
+        throw new Error(errorMessage)
+    }
+    return response.json()
 }
 
-export const fetchMonthlySummary = async () => {
-    const response = await fetch(`${API_BASE_URL}/summary/monthly`)
-    const result = await response.json()
-    return result.data
+export const tripsApi = {
+    getYearlySummary: () => 
+        fetch(`${API_BASE_URL}/summary/yearly`).then(handleResponse)
 }
+

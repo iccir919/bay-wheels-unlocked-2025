@@ -1,19 +1,12 @@
 
 import React, { useState, useEffect } from "react"
+import { tripsApi } from "./services/api"
 import './App.css'
 
-const API_BASE_URL = "http://localhost:3000/api"
-
 function BayWheelsUnlocked() {
+  const [data, setData] = useState({ yearly: null, routes: []})
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  const [data, setData] = useState({
-    yearly: null,
-    monthly: [],
-    tripRoutes: [],
-    distribution: [],
-    rideableTypes: []
-  })
 
   useEffect(() => {
     fetchData()
@@ -22,12 +15,20 @@ function BayWheelsUnlocked() {
   const fetchData = async () => {
     try {
       setLoading(true)
+      setError(null)
 
-      throw Error("This has been a test error...")
+      const [yearlyRes] = await Promise.all([
+        tripsApi.getYearlySummary()
+      ])
+
+      setData({
+        yearly: yearlyRes.data
+      })
 
     } catch (err) {
       console.error("Error fetching data:", err)
-      setError("There has been a hot error")
+      setError("There has been an error", err)
+    } finally {
       setLoading(false)
     }
   }
