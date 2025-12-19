@@ -59,7 +59,7 @@ function BayWheelsUnlocked() {
     )
   }
 
-  const { yearly } = data
+  const { yearly, topRoutes } = data
 
 
   const formatNumber = (num) => {
@@ -109,6 +109,68 @@ function BayWheelsUnlocked() {
             icon="🏢"
           />
 
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          {/* Top Routes */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🔥 Top Routes</h2>
+            <div className="space-y-3">
+              {topRoutes.slice(0, 5).map((route, idx) => {
+                const isRoundTrip = route.start_station_id === route.end_station_id;
+                
+                return (
+                  <div key={idx} className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex-1">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">
+                          {route.start_station_name}
+                        </div>
+                        {!isRoundTrip && (
+                          <div className="text-xs text-gray-500 flex items-center">
+                            <span>↓</span>
+                            <span className="ml-1">{route.end_station_name}</span>
+                          </div>
+                        )}
+                        {isRoundTrip && (
+                          <div className="text-xs text-emerald-600 font-medium flex items-center">
+                            <span>🔄</span>
+                            <span className="ml-1">Round Trip</span>
+                          </div>
+                        )}
+                      </div>
+                      <div className="text-right ml-3">
+                        <div className="text-2xl font-bold text-indigo-600">
+                          {formatNumber(route.trips_on_route)}
+                        </div>
+                        <div className="text-xs text-gray-500">trips</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center justify-between text-xs pt-3 border-t border-gray-200">
+                      <div>
+                        <span className="text-gray-500">Avg Duration: </span>
+                        <span className="font-semibold text-gray-700">
+                          {formatDuration(parseFloat(route.avg_duration_minutes))}
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div>
+                          <span className="text-gray-500">Members: </span>
+                          <span className="font-semibold text-blue-600">{formatNumber(route.member_trips)}</span>
+                        </div>
+                        <div>
+                          <span className="text-gray-500">Casual: </span>
+                          <span className="font-semibold text-purple-600">{formatNumber(route.casual_trips)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
       </div>
