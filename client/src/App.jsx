@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
 
 const StatCard = ({ emoji, label, value, subtext }) => (
   <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

@@ -7,9 +7,14 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "db:init": "node scripts/init-schema.js",
-    "db:import": "node scripts/import-data.js",
-    "db:reset": "npm run db:init && npm run db:import"
+    
+    "db:init:local": "DB_TARGET=local node scripts/init-schema.js",
+    "db:import:local": "DB_TARGET=local node scripts/import-data.js",
+    
+    "db:init:supabase": "DB_TARGET=supabase node scripts/init-schema.js",
+    "db:import:supabase": "DB_TARGET=supabase node scripts/import-data.js",
+    
+    "deploy:supabase": "npm run db:init:supabase && npm run db:import:supabase"
   },
   "author": "Neil Ricci",
   "license": "ISC",
