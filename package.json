@@ -1,0 +1,31 @@
+{
+  "name": "bay-wheels-unlocked-2025",
+  "version": "1.0.0",
+  "description": "Bay Wheels 2025 trip data analysis using PGlite and frontend visualizations",
+  "type": "module",
+  "scripts": {
+    "db:init": "node scripts/init-db.js",
+    "db:ingest": "node scripts/ingest-all.js",
+    "db:export": "node scripts/export-json.js",
+    "dev": "vite frontend",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iccir919/bay-wheels-unlocked-2025.git"
+  },
+  "author": "Neil Ricci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iccir919/bay-wheels-unlocked-2025/issues"
+  },
+  "homepage": "https://github.com/iccir919/bay-wheels-unlocked-2025#readme",
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "csv-parser": "^3.2.0",
+    "path": "^0.12.7",
+    "vite": "^7.3.0"
+  }
+}

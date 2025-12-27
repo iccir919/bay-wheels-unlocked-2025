@@ -1,0 +1,82 @@
+[
+  {
+    "station_id": "SF-J29",
+    "trips": 41303
+  },
+  {
+    "station_id": "SF-E29-2",
+    "trips": 37293
+  },
+  {
+    "station_id": "SF-G27",
+    "trips": 32274
+  },
+  {
+    "station_id": "SF-J23-1",
+    "trips": 29938
+  },
+  {
+    "station_id": "SF-P30",
+    "trips": 25951
+  },
+  {
+    "station_id": "SF-J18",
+    "trips": 25520
+  },
+  {
+    "station_id": "SF-E29-1",
+    "trips": 24944
+  },
+  {
+    "station_id": "SF-K19",
+    "trips": 24741
+  },
+  {
+    "station_id": "SF-K20",
+    "trips": 24130
+  },
+  {
+    "station_id": "SF-N22-2",
+    "trips": 23754
+  },
+  {
+    "station_id": "SF-L15",
+    "trips": 23524
+  },
+  {
+    "station_id": "SF-GGP-03",
+    "trips": 23233
+  },
+  {
+    "station_id": "SF-A22",
+    "trips": 23045
+  },
+  {
+    "station_id": "SF-M20",
+    "trips": 22466
+  },
+  {
+    "station_id": "SF-G29-1",
+    "trips": 22405
+  },
+  {
+    "station_id": "SF-H26",
+    "trips": 22161
+  },
+  {
+    "station_id": "SF-F28-3",
+    "trips": 22047
+  },
+  {
+    "station_id": "SF-K16",
+    "trips": 22046
+  },
+  {
+    "station_id": "SF-L21",
+    "trips": 21238
+  },
+  {
+    "station_id": "SF-I30",
+    "trips": 20906
+  }
+]

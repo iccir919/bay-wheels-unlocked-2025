@@ -1,2 +1,5 @@
-data/
-.DS_STORE
+node_modules/
+data/raw/*.csv
+db/pglite/
+dist/
+.DS_Store
