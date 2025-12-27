@@ -1,0 +1,6512 @@
+{
+  "metadata": {
+    "generatedAt": "2025-12-27T19:20:46.621Z",
+    "queryCount": 11
+  },
+  "results": {
+    "overview": [
+      {
+        "total_trips": 3725830,
+        "unique_stations": 625,
+        "earliest_trip": "2025-01-01T03:25:24.269Z",
+        "latest_trip": "2025-11-01T06:56:24.542Z",
+        "avg_duration_seconds": 796,
+        "avg_duration_minutes": 13,
+        "total_hours": 823762,
+        "member_trips": 2908118,
+        "casual_trips": 817712,
+        "electric_trips": 2926500,
+        "classic_trips": 799330,
+        "round_trips": 100643
+      }
+    ],
+    "topStationsOverall": [
+      {
+        "name": "San Francisco Caltrain Station - Townsend St",
+        "lat": 37.7766,
+        "lng": -122.39528,
+        "departures": 41303,
+        "member_starts": 33740,
+        "casual_starts": 7563
+      },
+      {
+        "name": "Market St at Steuart St",
+        "lat": 37.794525,
+        "lng": -122.39488,
+        "departures": 37293,
+        "member_starts": 29266,
+        "casual_starts": 8027
+      },
+      {
+        "name": "Powell St BART North",
+        "lat": 37.786137,
+        "lng": -122.405235,
+        "departures": 32274,
+        "member_starts": 25842,
+        "casual_starts": 6432
+      },
+      {
+        "name": "Market St at 10th St",
+        "lat": 37.77662,
+        "lng": -122.41738,
+        "departures": 29938,
+        "member_starts": 25888,
+        "casual_starts": 4050
+      },
+      {
+        "name": "22nd St Caltrain Station",
+        "lat": 37.757706,
+        "lng": -122.391884,
+        "departures": 25951,
+        "member_starts": 22039,
+        "casual_starts": 3912
+      },
+      {
+        "name": "Grove St at Divisadero",
+        "lat": 37.775948,
+        "lng": -122.437775,
+        "departures": 25520,
+        "member_starts": 20669,
+        "casual_starts": 4851
+      },
+      {
+        "name": "San Francisco Ferry Building",
+        "lat": 37.79539,
+        "lng": -122.3942,
+        "departures": 24944,
+        "member_starts": 16374,
+        "casual_starts": 8570
+      },
+      {
+        "name": "Page St at Scott St",
+        "lat": 37.772354,
+        "lng": -122.43586,
+        "departures": 24741,
+        "member_starts": 19542,
+        "casual_starts": 5199
+      },
+      {
+        "name": "Pierce St at Haight St",
+        "lat": 37.771793,
+        "lng": -122.43371,
+        "departures": 24130,
+        "member_starts": 19494,
+        "casual_starts": 4636
+      },
+      {
+        "name": "17th St at Valencia St",
+        "lat": 37.763332,
+        "lng": -122.42206,
+        "departures": 23754,
+        "member_starts": 19714,
+        "casual_starts": 4040
+      },
+      {
+        "name": "Waller St at Shrader St",
+        "lat": 37.768383,
+        "lng": -122.451965,
+        "departures": 23524,
+        "member_starts": 16592,
+        "casual_starts": 6932
+      },
+      {
+        "name": "8th Ave at JFK Dr",
+        "lat": 37.772907,
+        "lng": -122.465935,
+        "departures": 23233,
+        "member_starts": 10755,
+        "casual_starts": 12478
+      },
+      {
+        "name": "North Point St at Polk St",
+        "lat": 37.805443,
+        "lng": -122.42313,
+        "departures": 23045,
+        "member_starts": 15250,
+        "casual_starts": 7795
+      },
+      {
+        "name": "Sanchez St at 15th St",
+        "lat": 37.76622,
+        "lng": -122.43106,
+        "departures": 22466,
+        "member_starts": 18833,
+        "casual_starts": 3633
+      },
+      {
+        "name": "Salesforce Transit Center",
+        "lat": 37.78749,
+        "lng": -122.398285,
+        "departures": 22405,
+        "member_starts": 19104,
+        "casual_starts": 3301
+      },
+      {
+        "name": "Powell St BART South",
+        "lat": 37.7839,
+        "lng": -122.40845,
+        "departures": 22161,
+        "member_starts": 17220,
+        "casual_starts": 4941
+      },
+      {
+        "name": "Sansome St at Sutter St",
+        "lat": 37.790546,
+        "lng": -122.400604,
+        "departures": 22047,
+        "member_starts": 18665,
+        "casual_starts": 3382
+      },
+      {
+        "name": "Page St at Masonic Ave",
+        "lat": 37.771133,
+        "lng": -122.44534,
+        "departures": 22046,
+        "member_starts": 17147,
+        "casual_starts": 4899
+      },
+      {
+        "name": "Market St at Dolores St",
+        "lat": 37.769245,
+        "lng": -122.42696,
+        "departures": 21238,
+        "member_starts": 18599,
+        "casual_starts": 2639
+      },
+      {
+        "name": "2nd St at Townsend St",
+        "lat": 37.780525,
+        "lng": -122.39029,
+        "departures": 20906,
+        "member_starts": 16310,
+        "casual_starts": 4596
+      },
+      {
+        "name": "Laguna St at Hayes St",
+        "lat": 37.77625,
+        "lng": -122.4262,
+        "departures": 20493,
+        "member_starts": 17213,
+        "casual_starts": 3280
+      },
+      {
+        "name": "Illinois St at 20th St",
+        "lat": 37.76034,
+        "lng": -122.38745,
+        "departures": 19647,
+        "member_starts": 16346,
+        "casual_starts": 3301
+      },
+      {
+        "name": "Berry St at 4th St",
+        "lat": 37.775993,
+        "lng": -122.393005,
+        "departures": 19644,
+        "member_starts": 16864,
+        "casual_starts": 2780
+      },
+      {
+        "name": "Pompei Circle at JFK Dr",
+        "lat": 37.7717,
+        "lng": -122.45828,
+        "departures": 19450,
+        "member_starts": 8860,
+        "casual_starts": 10590
+      },
+      {
+        "name": "8th St at Ringold St",
+        "lat": 37.77452,
+        "lng": -122.40945,
+        "departures": 19266,
+        "member_starts": 16408,
+        "casual_starts": 2858
+      },
+      {
+        "name": "4th St at Gene Friend Way",
+        "lat": 37.76887,
+        "lng": -122.391106,
+        "departures": 19188,
+        "member_starts": 17023,
+        "casual_starts": 2165
+      },
+      {
+        "name": "Mission Playground",
+        "lat": 37.759018,
+        "lng": -122.421455,
+        "departures": 19134,
+        "member_starts": 16048,
+        "casual_starts": 3086
+      },
+      {
+        "name": "Jackson St at Polk St",
+        "lat": 37.79416,
+        "lng": -122.42157,
+        "departures": 19066,
+        "member_starts": 15411,
+        "casual_starts": 3655
+      },
+      {
+        "name": "4th St at Long Bridge St",
+        "lat": 37.773754,
+        "lng": -122.391426,
+        "departures": 18840,
+        "member_starts": 15957,
+        "casual_starts": 2883
+      },
+      {
+        "name": "S Van Ness Ave at Market St",
+        "lat": 37.774815,
+        "lng": -122.41895,
+        "departures": 18568,
+        "member_starts": 16266,
+        "casual_starts": 2302
+      },
+      {
+        "name": "Howard St at Beale St",
+        "lat": 37.790295,
+        "lng": -122.393875,
+        "departures": 18425,
+        "member_starts": 16067,
+        "casual_starts": 2358
+      },
+      {
+        "name": "Koshland Park",
+        "lat": 37.77344,
+        "lng": -122.427155,
+        "departures": 18323,
+        "member_starts": 15752,
+        "casual_starts": 2571
+      },
+      {
+        "name": "Filbert St at Powell Street",
+        "lat": 37.801155,
+        "lng": -122.41081,
+        "departures": 18314,
+        "member_starts": 14110,
+        "casual_starts": 4204
+      },
+      {
+        "name": "San Francisco Public Library",
+        "lat": 37.778797,
+        "lng": -122.41596,
+        "departures": 18078,
+        "member_starts": 14856,
+        "casual_starts": 3222
+      },
+      {
+        "name": "Buchanan St at North Point St",
+        "lat": 37.804432,
+        "lng": -122.433525,
+        "departures": 18046,
+        "member_starts": 12798,
+        "casual_starts": 5248
+      },
+      {
+        "name": "2nd St at Folsom St",
+        "lat": 37.7852,
+        "lng": -122.39622,
+        "departures": 17875,
+        "member_starts": 14831,
+        "casual_starts": 3044
+      },
+      {
+        "name": "Grove St at Gough St",
+        "lat": 37.777832,
+        "lng": -122.42277,
+        "departures": 17779,
+        "member_starts": 14995,
+        "casual_starts": 2784
+      },
+      {
+        "name": "Jackson Playground",
+        "lat": 37.765057,
+        "lng": -122.398994,
+        "departures": 17668,
+        "member_starts": 15053,
+        "casual_starts": 2615
+      },
+      {
+        "name": "Polk St at Bush St",
+        "lat": 37.78848,
+        "lng": -122.420334,
+        "departures": 17428,
+        "member_starts": 14271,
+        "casual_starts": 3157
+      },
+      {
+        "name": "Mission Dolores Park",
+        "lat": 37.76142,
+        "lng": -122.42644,
+        "departures": 17363,
+        "member_starts": 13913,
+        "casual_starts": 3450
+      },
+      {
+        "name": "1st St at Folsom St",
+        "lat": 37.78729,
+        "lng": -122.39438,
+        "departures": 17251,
+        "member_starts": 15085,
+        "casual_starts": 2166
+      },
+      {
+        "name": "Rhode Island St at 17th St",
+        "lat": 37.764477,
+        "lng": -122.40257,
+        "departures": 17014,
+        "member_starts": 15139,
+        "casual_starts": 1875
+      },
+      {
+        "name": "Pier 1/2 at The Embarcadero",
+        "lat": 37.79639,
+        "lng": -122.394585,
+        "departures": 16980,
+        "member_starts": 10252,
+        "casual_starts": 6728
+      },
+      {
+        "name": "Mechanics Monument Plaza",
+        "lat": 37.7913,
+        "lng": -122.39905,
+        "departures": 16699,
+        "member_starts": 13780,
+        "casual_starts": 2919
+      },
+      {
+        "name": "Fulton St at Laguna St",
+        "lat": 37.778343,
+        "lng": -122.42638,
+        "departures": 16657,
+        "member_starts": 14195,
+        "casual_starts": 2462
+      },
+      {
+        "name": "Union Square",
+        "lat": 37.7883,
+        "lng": -122.40853,
+        "departures": 16604,
+        "member_starts": 12742,
+        "casual_starts": 3862
+      },
+      {
+        "name": "Fell St at Clayton St",
+        "lat": 37.77256,
+        "lng": -122.448906,
+        "departures": 16561,
+        "member_starts": 11952,
+        "casual_starts": 4609
+      },
+      {
+        "name": "Octavia Blvd at Page St",
+        "lat": 37.774017,
+        "lng": -122.423805,
+        "departures": 16496,
+        "member_starts": 14355,
+        "casual_starts": 2141
+      },
+      {
+        "name": "Post St at Kearny St",
+        "lat": 37.788975,
+        "lng": -122.40345,
+        "departures": 16438,
+        "member_starts": 13840,
+        "casual_starts": 2598
+      },
+      {
+        "name": "Broderick St at Oak St",
+        "lat": 37.773064,
+        "lng": -122.43908,
+        "departures": 16223,
+        "member_starts": 12851,
+        "casual_starts": 3372
+      }
+    ],
+    "topRoutes": [
+      {
+        "start_station": "8th Ave at JFK Dr",
+        "end_station": "JFK Dr at Great Highway",
+        "start_lat": 37.772907,
+        "start_lng": -122.465935,
+        "end_lat": 37.770477,
+        "end_lng": -122.5106,
+        "trips": 1817,
+        "avg_duration_minutes": 25
+      },
+      {
+        "start_station": "Pompei Circle at JFK Dr",
+        "end_station": "JFK Dr at Great Highway",
+        "start_lat": 37.7717,
+        "start_lng": -122.45828,
+        "end_lat": 37.770477,
+        "end_lng": -122.5106,
+        "trips": 1537,
+        "avg_duration_minutes": 29
+      },
+      {
+        "start_station": "Berry St at 4th St",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.775993,
+        "start_lng": -122.393005,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 1515,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "Pompei Circle at JFK Dr",
+        "end_station": "8th Ave at JFK Dr",
+        "start_lat": 37.7717,
+        "start_lng": -122.45828,
+        "end_lat": 37.772907,
+        "end_lng": -122.465935,
+        "trips": 1467,
+        "avg_duration_minutes": 21
+      },
+      {
+        "start_station": "The Embarcadero at Sansome St",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.80477,
+        "start_lng": -122.40324,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 1420,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "3rd St at King St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.7779,
+        "end_lng": -122.39141,
+        "trips": 1410,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "19th Street BART",
+        "end_station": "Bay Pl at Vernon St",
+        "start_lat": 37.809505,
+        "start_lng": -122.2679,
+        "end_lat": 37.812252,
+        "end_lng": -122.26072,
+        "trips": 1267,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "JFK Dr at Great Highway",
+        "end_station": "8th Ave at JFK Dr",
+        "start_lat": 37.770477,
+        "start_lng": -122.5106,
+        "end_lat": 37.772907,
+        "end_lng": -122.465935,
+        "trips": 1267,
+        "avg_duration_minutes": 27
+      },
+      {
+        "start_station": "North Point St at Grant Ave",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.80717,
+        "start_lng": -122.40928,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 1266,
+        "avg_duration_minutes": 8
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "Berry St at 4th St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.775993,
+        "end_lng": -122.393005,
+        "trips": 1261,
+        "avg_duration_minutes": 10
+      },
+      {
+        "start_station": "8th St at Ringold St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.77452,
+        "start_lng": -122.40945,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 1251,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "Sansome St at Sutter St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.790546,
+        "end_lng": -122.400604,
+        "trips": 1211,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "Bay Pl at Vernon St",
+        "end_station": "19th Street BART",
+        "start_lat": 37.812252,
+        "start_lng": -122.26072,
+        "end_lat": 37.809505,
+        "end_lng": -122.2679,
+        "trips": 1194,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "Terry Francois Blvd at Warriors Way",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.769096,
+        "end_lng": -122.38633,
+        "trips": 1174,
+        "avg_duration_minutes": 13
+      },
+      {
+        "start_station": "Grand Ave at Perkins St",
+        "end_station": "19th Street BART",
+        "start_lat": 37.808895,
+        "start_lng": -122.25646,
+        "end_lat": 37.809505,
+        "end_lng": -122.2679,
+        "trips": 1173,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "North Point St at Polk St",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.805443,
+        "start_lng": -122.42313,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 1158,
+        "avg_duration_minutes": 11
+      },
+      {
+        "start_station": "Terry Francois Blvd at Warriors Way",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.769096,
+        "start_lng": -122.38633,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 1150,
+        "avg_duration_minutes": 11
+      },
+      {
+        "start_station": "19th Street BART",
+        "end_station": "Grand Ave at Perkins St",
+        "start_lat": 37.809505,
+        "start_lng": -122.2679,
+        "end_lat": 37.808895,
+        "end_lng": -122.25646,
+        "trips": 1133,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Battery St at Filbert St",
+        "end_station": "Mechanics Monument Plaza",
+        "start_lat": 37.802055,
+        "start_lng": -122.40172,
+        "end_lat": 37.7913,
+        "end_lng": -122.39905,
+        "trips": 1132,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "Sansome St at Sutter St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.790546,
+        "start_lng": -122.400604,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 1130,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "Pier 1/2 at The Embarcadero",
+        "end_station": "North Point St at Grant Ave",
+        "start_lat": 37.79639,
+        "start_lng": -122.394585,
+        "end_lat": 37.80717,
+        "end_lng": -122.40928,
+        "trips": 1121,
+        "avg_duration_minutes": 16
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "North Point St at Grant Ave",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.80717,
+        "end_lng": -122.40928,
+        "trips": 1119,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "4th St at Gene Friend Way",
+        "end_station": "Berry St at 4th St",
+        "start_lat": 37.76887,
+        "start_lng": -122.391106,
+        "end_lat": 37.775993,
+        "end_lng": -122.393005,
+        "trips": 1109,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "San Francisco Ferry Building",
+        "end_station": "North Point St at Grant Ave",
+        "start_lat": 37.79539,
+        "start_lng": -122.3942,
+        "end_lat": 37.80717,
+        "end_lng": -122.40928,
+        "trips": 1106,
+        "avg_duration_minutes": 13
+      },
+      {
+        "start_station": "West Oakland BART",
+        "end_station": "Raimondi Park",
+        "start_lat": 37.80519,
+        "start_lng": -122.29462,
+        "end_lat": 37.81493,
+        "end_lng": -122.29295,
+        "trips": 1103,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "MacArthur BART",
+        "end_station": "Telegraph Ave at 49th St",
+        "start_lat": 37.828594,
+        "start_lng": -122.26635,
+        "end_lat": 37.83575,
+        "end_lng": -122.26266,
+        "trips": 1087,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Mission St at Beale St",
+        "end_station": "Beale St at Harrison St",
+        "start_lat": 37.791252,
+        "start_lng": -122.39563,
+        "end_lat": 37.787964,
+        "end_lng": -122.39181,
+        "trips": 1081,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Townsend St at 7th St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.771057,
+        "start_lng": -122.40272,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 1052,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Lombard St at Columbus Ave",
+        "end_station": "The Embarcadero at Sansome St",
+        "start_lat": 37.80277,
+        "start_lng": -122.41328,
+        "end_lat": 37.80477,
+        "end_lng": -122.40324,
+        "trips": 1050,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Terry Francois Blvd at Warriors Way",
+        "end_station": "San Francisco Ferry Building",
+        "start_lat": 37.769096,
+        "start_lng": -122.38633,
+        "end_lat": 37.79539,
+        "end_lng": -122.3942,
+        "trips": 1043,
+        "avg_duration_minutes": 14
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "Townsend St at 7th St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.771057,
+        "end_lng": -122.40272,
+        "trips": 1041,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "3rd St at King St",
+        "end_station": "San Francisco Ferry Building",
+        "start_lat": 37.7779,
+        "start_lng": -122.39141,
+        "end_lat": 37.79539,
+        "end_lng": -122.3942,
+        "trips": 1037,
+        "avg_duration_minutes": 10
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "The Embarcadero at Sansome St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.80477,
+        "end_lng": -122.40324,
+        "trips": 1034,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Telegraph Ave at 49th St",
+        "end_station": "MacArthur BART",
+        "start_lat": 37.83575,
+        "start_lng": -122.26266,
+        "end_lat": 37.828594,
+        "end_lng": -122.26635,
+        "trips": 1033,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "North Point St at Powell St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.80693,
+        "end_lng": -122.41154,
+        "trips": 1033,
+        "avg_duration_minutes": 11
+      },
+      {
+        "start_station": "Bancroft Way at Telegraph Ave",
+        "end_station": "Euclid Ave at Hearst Ave",
+        "start_lat": 37.86891,
+        "start_lng": -122.25879,
+        "end_lat": 37.87532,
+        "end_lng": -122.260155,
+        "trips": 1020,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Raimondi Park",
+        "end_station": "West Oakland BART",
+        "start_lat": 37.81493,
+        "start_lng": -122.29295,
+        "end_lat": 37.80519,
+        "end_lng": -122.29462,
+        "trips": 1013,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "San Francisco Public Library",
+        "end_station": "Grove St at Gough St",
+        "start_lat": 37.778797,
+        "start_lng": -122.41596,
+        "end_lat": 37.777832,
+        "end_lng": -122.42277,
+        "trips": 1001,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "22nd St Caltrain Station",
+        "end_station": "Hospital St at Mariposa St",
+        "start_lat": 37.757706,
+        "start_lng": -122.391884,
+        "end_lat": 37.764782,
+        "end_lng": -122.3909,
+        "trips": 980,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Salesforce Transit Center",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.78749,
+        "start_lng": -122.398285,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 974,
+        "avg_duration_minutes": 8
+      },
+      {
+        "start_station": "JFK Dr at Great Highway",
+        "end_station": "Pompei Circle at JFK Dr",
+        "start_lat": 37.770477,
+        "start_lng": -122.5106,
+        "end_lat": 37.7717,
+        "end_lng": -122.45828,
+        "trips": 972,
+        "avg_duration_minutes": 25
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "Illinois St at 20th St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.76034,
+        "end_lng": -122.38745,
+        "trips": 971,
+        "avg_duration_minutes": 15
+      },
+      {
+        "start_station": "Bancroft Way at College Ave",
+        "end_station": "Downtown Berkeley BART",
+        "start_lat": 37.869396,
+        "start_lng": -122.25433,
+        "end_lat": 37.87014,
+        "end_lng": -122.268425,
+        "trips": 955,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Berry St at 4th St",
+        "end_station": "4th St at Gene Friend Way",
+        "start_lat": 37.775993,
+        "start_lng": -122.393005,
+        "end_lat": 37.76887,
+        "end_lng": -122.391106,
+        "trips": 947,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Grove St at Gough St",
+        "end_station": "San Francisco Public Library",
+        "start_lat": 37.777832,
+        "start_lng": -122.42277,
+        "end_lat": 37.778797,
+        "end_lng": -122.41596,
+        "trips": 946,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "Downtown Berkeley BART",
+        "end_station": "Bancroft Way at College Ave",
+        "start_lat": 37.87014,
+        "start_lng": -122.268425,
+        "end_lat": 37.869396,
+        "end_lng": -122.25433,
+        "trips": 941,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "Mission Playground",
+        "end_station": "Valencia St at 24th St",
+        "start_lat": 37.759018,
+        "start_lng": -122.421455,
+        "end_lat": 37.752426,
+        "end_lng": -122.42063,
+        "trips": 940,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "8th Ave at JFK Dr",
+        "end_station": "Pompei Circle at JFK Dr",
+        "start_lat": 37.772907,
+        "start_lng": -122.465935,
+        "end_lat": 37.7717,
+        "end_lng": -122.45828,
+        "trips": 933,
+        "avg_duration_minutes": 20
+      },
+      {
+        "start_station": "22nd St Caltrain Station",
+        "end_station": "Terry Francois Blvd at Warriors Way",
+        "start_lat": 37.757706,
+        "start_lng": -122.391884,
+        "end_lat": 37.769096,
+        "end_lng": -122.38633,
+        "trips": 924,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "Salesforce Transit Center",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.78749,
+        "end_lng": -122.398285,
+        "trips": 915,
+        "avg_duration_minutes": 8
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "Brannan St at 7th St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.772438,
+        "end_lng": -122.40392,
+        "trips": 907,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Mechanics Monument Plaza",
+        "end_station": "Battery St at Filbert St",
+        "start_lat": 37.7913,
+        "start_lng": -122.39905,
+        "end_lat": 37.802055,
+        "end_lng": -122.40172,
+        "trips": 899,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Market St at 10th St",
+        "end_station": "Powell St BART North",
+        "start_lat": 37.77662,
+        "start_lng": -122.41738,
+        "end_lat": 37.786137,
+        "end_lng": -122.405235,
+        "trips": 896,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "8th St at Brannan St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.77143,
+        "start_lng": -122.405785,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 891,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "North Point St at Polk St",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.805443,
+        "end_lng": -122.42313,
+        "trips": 887,
+        "avg_duration_minutes": 14
+      },
+      {
+        "start_station": "3rd St at King St",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.7779,
+        "start_lng": -122.39141,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 881,
+        "avg_duration_minutes": 8
+      },
+      {
+        "start_station": "Broadway at 30th St",
+        "end_station": "19th Street BART",
+        "start_lat": 37.81938,
+        "start_lng": -122.261925,
+        "end_lat": 37.809505,
+        "end_lng": -122.2679,
+        "trips": 879,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "North Point St at Powell St",
+        "end_station": "Market St at Steuart St",
+        "start_lat": 37.80693,
+        "start_lng": -122.41154,
+        "end_lat": 37.794525,
+        "end_lng": -122.39488,
+        "trips": 873,
+        "avg_duration_minutes": 8
+      },
+      {
+        "start_station": "Pier 1/2 at The Embarcadero",
+        "end_station": "North Point St at Powell St",
+        "start_lat": 37.79639,
+        "start_lng": -122.394585,
+        "end_lat": 37.80693,
+        "end_lng": -122.41154,
+        "trips": 863,
+        "avg_duration_minutes": 17
+      },
+      {
+        "start_station": "Illinois St at 20th St",
+        "end_station": "22nd St Caltrain Station",
+        "start_lat": 37.76034,
+        "start_lng": -122.38745,
+        "end_lat": 37.757706,
+        "end_lng": -122.391884,
+        "trips": 859,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Euclid Ave at Hearst Ave",
+        "end_station": "Downtown Berkeley BART",
+        "start_lat": 37.87532,
+        "start_lng": -122.260155,
+        "end_lat": 37.87014,
+        "end_lng": -122.268425,
+        "trips": 858,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Page St at Masonic Ave",
+        "end_station": "Page St at Scott St",
+        "start_lat": 37.771133,
+        "start_lng": -122.44534,
+        "end_lat": 37.772354,
+        "end_lng": -122.43586,
+        "trips": 856,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Hospital St at Mariposa St",
+        "end_station": "22nd St Caltrain Station",
+        "start_lat": 37.764782,
+        "start_lng": -122.3909,
+        "end_lat": 37.757706,
+        "end_lng": -122.391884,
+        "trips": 852,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Valencia St at 24th St",
+        "end_station": "Mission Playground",
+        "start_lat": 37.752426,
+        "start_lng": -122.42063,
+        "end_lat": 37.759018,
+        "end_lng": -122.421455,
+        "trips": 844,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "40th St at Piedmont Ave",
+        "end_station": "MacArthur BART",
+        "start_lat": 37.825787,
+        "start_lng": -122.25347,
+        "end_lat": 37.828594,
+        "end_lng": -122.26635,
+        "trips": 841,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "2nd St at Folsom St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.7852,
+        "end_lng": -122.39622,
+        "trips": 839,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "22nd St Caltrain Station",
+        "end_station": "Illinois St at 20th St",
+        "start_lat": 37.757706,
+        "start_lng": -122.391884,
+        "end_lat": 37.76034,
+        "end_lng": -122.38745,
+        "trips": 838,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Pier 1/2 at The Embarcadero",
+        "end_station": "North Point St at Polk St",
+        "start_lat": 37.79639,
+        "start_lng": -122.394585,
+        "end_lat": 37.805443,
+        "end_lng": -122.42313,
+        "trips": 837,
+        "avg_duration_minutes": 19
+      },
+      {
+        "start_station": "Berry St at 4th St",
+        "end_station": "San Francisco Ferry Building",
+        "start_lat": 37.775993,
+        "start_lng": -122.393005,
+        "end_lat": 37.79539,
+        "end_lng": -122.3942,
+        "trips": 831,
+        "avg_duration_minutes": 10
+      },
+      {
+        "start_station": "4th St at Gene Friend Way",
+        "end_station": "4th St at Long Bridge St",
+        "start_lat": 37.76887,
+        "start_lng": -122.391106,
+        "end_lat": 37.773754,
+        "end_lng": -122.391426,
+        "trips": 830,
+        "avg_duration_minutes": 3
+      },
+      {
+        "start_station": "The Embarcadero at Sansome St",
+        "end_station": "Mason St at Bay St",
+        "start_lat": 37.80477,
+        "start_lng": -122.40324,
+        "end_lat": 37.805454,
+        "end_lng": -122.413666,
+        "trips": 827,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Market St at 10th St",
+        "end_station": "Civic Center BART",
+        "start_lat": 37.77662,
+        "start_lng": -122.41738,
+        "end_lat": 37.781075,
+        "end_lng": -122.411736,
+        "trips": 826,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "San Francisco Ferry Building",
+        "end_station": "North Point St at Powell St",
+        "start_lat": 37.79539,
+        "start_lng": -122.3942,
+        "end_lat": 37.80693,
+        "end_lng": -122.41154,
+        "trips": 826,
+        "avg_duration_minutes": 16
+      },
+      {
+        "start_station": "2nd St at Folsom St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.7852,
+        "start_lng": -122.39622,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 824,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "West Crissy Field",
+        "end_station": "Buchanan St at North Point St",
+        "start_lat": 37.803825,
+        "start_lng": -122.46771,
+        "end_lat": 37.804432,
+        "end_lng": -122.433525,
+        "trips": 824,
+        "avg_duration_minutes": 16
+      },
+      {
+        "start_station": "Brannan St at 7th St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.772438,
+        "start_lng": -122.40392,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 823,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Powell St BART South",
+        "end_station": "Market St at 10th St",
+        "start_lat": 37.7839,
+        "start_lng": -122.40845,
+        "end_lat": 37.77662,
+        "end_lng": -122.41738,
+        "trips": 814,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "San Fernando St at 4th St",
+        "end_station": "San Salvador St at 9th St",
+        "start_lat": 37.335884,
+        "start_lng": -121.88566,
+        "end_lat": 37.333954,
+        "end_lng": -121.87735,
+        "trips": 811,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "8th St at Ringold St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.77452,
+        "end_lng": -122.40945,
+        "trips": 809,
+        "avg_duration_minutes": 9
+      },
+      {
+        "start_station": "4th St at Gene Friend Way",
+        "end_station": "22nd St Caltrain Station",
+        "start_lat": 37.76887,
+        "start_lng": -122.391106,
+        "end_lat": 37.757706,
+        "end_lng": -122.391884,
+        "trips": 798,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "San Francisco Ferry Building",
+        "end_station": "North Point St at Polk St",
+        "start_lat": 37.79539,
+        "start_lng": -122.3942,
+        "end_lat": 37.805443,
+        "end_lng": -122.42313,
+        "trips": 792,
+        "avg_duration_minutes": 19
+      },
+      {
+        "start_station": "MacArthur BART",
+        "end_station": "40th St at Piedmont Ave",
+        "start_lat": 37.828594,
+        "start_lng": -122.26635,
+        "end_lat": 37.825787,
+        "end_lng": -122.25347,
+        "trips": 781,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "22nd St Caltrain Station",
+        "end_station": "Esprit Park",
+        "start_lat": 37.757706,
+        "start_lng": -122.391884,
+        "end_lat": 37.761635,
+        "end_lng": -122.39065,
+        "trips": 780,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "17th St at Valencia St",
+        "end_station": "16th St at Prosper St",
+        "start_lat": 37.763332,
+        "start_lng": -122.42206,
+        "end_lat": 37.764286,
+        "end_lng": -122.4318,
+        "trips": 780,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Market St at 10th St",
+        "end_station": "Market St at Dolores St",
+        "start_lat": 37.77662,
+        "start_lng": -122.41738,
+        "end_lat": 37.769245,
+        "end_lng": -122.42696,
+        "trips": 779,
+        "avg_duration_minutes": 6
+      },
+      {
+        "start_station": "Euclid Ave at Hearst Ave",
+        "end_station": "Bancroft Way at Telegraph Ave",
+        "start_lat": 37.87532,
+        "start_lng": -122.260155,
+        "end_lat": 37.86891,
+        "end_lng": -122.25879,
+        "trips": 776,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "8th Ave at JFK Dr",
+        "end_station": "36th Ave at Spreckels Lake Dr",
+        "start_lat": 37.772907,
+        "start_lng": -122.465935,
+        "end_lat": 37.771587,
+        "end_lng": -122.49577,
+        "trips": 775,
+        "avg_duration_minutes": 23
+      },
+      {
+        "start_station": "Davis St at Jackson St",
+        "end_station": "Battery St at Filbert St",
+        "start_lat": 37.79728,
+        "start_lng": -122.39844,
+        "end_lat": 37.802055,
+        "end_lng": -122.40172,
+        "trips": 772,
+        "avg_duration_minutes": 3
+      },
+      {
+        "start_station": "Page St at Scott St",
+        "end_station": "Page St at Masonic Ave",
+        "start_lat": 37.772354,
+        "start_lng": -122.43586,
+        "end_lat": 37.771133,
+        "end_lng": -122.44534,
+        "trips": 767,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Battery St at Filbert St",
+        "end_station": "Davis St at Jackson St",
+        "start_lat": 37.802055,
+        "start_lng": -122.40172,
+        "end_lat": 37.79728,
+        "end_lng": -122.39844,
+        "trips": 764,
+        "avg_duration_minutes": 3
+      },
+      {
+        "start_station": "4th St at Long Bridge St",
+        "end_station": "4th St at Gene Friend Way",
+        "start_lat": 37.773754,
+        "start_lng": -122.391426,
+        "end_lat": 37.76887,
+        "end_lng": -122.391106,
+        "trips": 763,
+        "avg_duration_minutes": 3
+      },
+      {
+        "start_station": "Market St at Steuart St",
+        "end_station": "Terry Francois Blvd at Mission Bay Blvd N",
+        "start_lat": 37.794525,
+        "start_lng": -122.39488,
+        "end_lat": 37.771767,
+        "end_lng": -122.38669,
+        "trips": 763,
+        "avg_duration_minutes": 12
+      },
+      {
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": "8th St at Brannan St",
+        "start_lat": 37.7766,
+        "start_lng": -122.39528,
+        "end_lat": 37.77143,
+        "end_lng": -122.405785,
+        "trips": 762,
+        "avg_duration_minutes": 7
+      },
+      {
+        "start_station": "Market St at 10th St",
+        "end_station": "San Francisco Caltrain Station - Townsend St",
+        "start_lat": 37.77662,
+        "start_lng": -122.41738,
+        "end_lat": 37.7766,
+        "end_lng": -122.39528,
+        "trips": 757,
+        "avg_duration_minutes": 10
+      },
+      {
+        "start_station": "Clay St at Battery St",
+        "end_station": "Battery St at Filbert St",
+        "start_lat": 37.795002,
+        "start_lng": -122.39997,
+        "end_lat": 37.802055,
+        "end_lng": -122.40172,
+        "trips": 752,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "Pierce St at Haight St",
+        "end_station": "Page St at Masonic Ave",
+        "start_lat": 37.771793,
+        "start_lng": -122.43371,
+        "end_lat": 37.771133,
+        "end_lng": -122.44534,
+        "trips": 750,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "West Crissy Field",
+        "end_station": "Lincoln Blvd at Hoffman St",
+        "start_lat": 37.803825,
+        "start_lng": -122.46771,
+        "end_lat": 37.806065,
+        "end_lng": -122.47028,
+        "trips": 749,
+        "avg_duration_minutes": 32
+      },
+      {
+        "start_station": "Mason St at Bay St",
+        "end_station": "The Embarcadero at Sansome St",
+        "start_lat": 37.805454,
+        "start_lng": -122.413666,
+        "end_lat": 37.80477,
+        "end_lng": -122.40324,
+        "trips": 748,
+        "avg_duration_minutes": 4
+      },
+      {
+        "start_station": "2nd St at Townsend St",
+        "end_station": "Salesforce Transit Center",
+        "start_lat": 37.780525,
+        "start_lng": -122.39029,
+        "end_lat": 37.78749,
+        "end_lng": -122.398285,
+        "trips": 747,
+        "avg_duration_minutes": 5
+      },
+      {
+        "start_station": "Salesforce Transit Center",
+        "end_station": "2nd St at Townsend St",
+        "start_lat": 37.78749,
+        "start_lng": -122.398285,
+        "end_lat": 37.780525,
+        "end_lng": -122.39029,
+        "trips": 744,
+        "avg_duration_minutes": 6
+      }
+    ],
+    "tripsByHour": [
+      {
+        "hour": 0,
+        "member_casual": "casual",
+        "trips": 7996,
+        "avg_duration_minutes": 22
+      },
+      {
+        "hour": 0,
+        "member_casual": "member",
+        "trips": 21295,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 1,
+        "member_casual": "casual",
+        "trips": 5573,
+        "avg_duration_minutes": 24
+      },
+      {
+        "hour": 1,
+        "member_casual": "member",
+        "trips": 12610,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 2,
+        "member_casual": "casual",
+        "trips": 3705,
+        "avg_duration_minutes": 25
+      },
+      {
+        "hour": 2,
+        "member_casual": "member",
+        "trips": 7348,
+        "avg_duration_minutes": 13
+      },
+      {
+        "hour": 3,
+        "member_casual": "casual",
+        "trips": 1468,
+        "avg_duration_minutes": 27
+      },
+      {
+        "hour": 3,
+        "member_casual": "member",
+        "trips": 3963,
+        "avg_duration_minutes": 14
+      },
+      {
+        "hour": 4,
+        "member_casual": "casual",
+        "trips": 1338,
+        "avg_duration_minutes": 21
+      },
+      {
+        "hour": 4,
+        "member_casual": "member",
+        "trips": 4736,
+        "avg_duration_minutes": 12
+      },
+      {
+        "hour": 5,
+        "member_casual": "casual",
+        "trips": 2733,
+        "avg_duration_minutes": 17
+      },
+      {
+        "hour": 5,
+        "member_casual": "member",
+        "trips": 14145,
+        "avg_duration_minutes": 10
+      },
+      {
+        "hour": 6,
+        "member_casual": "casual",
+        "trips": 8019,
+        "avg_duration_minutes": 15
+      },
+      {
+        "hour": 6,
+        "member_casual": "member",
+        "trips": 48557,
+        "avg_duration_minutes": 9
+      },
+      {
+        "hour": 7,
+        "member_casual": "casual",
+        "trips": 21000,
+        "avg_duration_minutes": 15
+      },
+      {
+        "hour": 7,
+        "member_casual": "member",
+        "trips": 131071,
+        "avg_duration_minutes": 10
+      },
+      {
+        "hour": 8,
+        "member_casual": "casual",
+        "trips": 38238,
+        "avg_duration_minutes": 15
+      },
+      {
+        "hour": 8,
+        "member_casual": "member",
+        "trips": 248775,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 9,
+        "member_casual": "casual",
+        "trips": 35132,
+        "avg_duration_minutes": 18
+      },
+      {
+        "hour": 9,
+        "member_casual": "member",
+        "trips": 192123,
+        "avg_duration_minutes": 10
+      },
+      {
+        "hour": 10,
+        "member_casual": "casual",
+        "trips": 37433,
+        "avg_duration_minutes": 23
+      },
+      {
+        "hour": 10,
+        "member_casual": "member",
+        "trips": 133515,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 11,
+        "member_casual": "casual",
+        "trips": 46642,
+        "avg_duration_minutes": 25
+      },
+      {
+        "hour": 11,
+        "member_casual": "member",
+        "trips": 136238,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 12,
+        "member_casual": "casual",
+        "trips": 54686,
+        "avg_duration_minutes": 25
+      },
+      {
+        "hour": 12,
+        "member_casual": "member",
+        "trips": 150336,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 13,
+        "member_casual": "casual",
+        "trips": 58600,
+        "avg_duration_minutes": 25
+      },
+      {
+        "hour": 13,
+        "member_casual": "member",
+        "trips": 146204,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 14,
+        "member_casual": "casual",
+        "trips": 62060,
+        "avg_duration_minutes": 25
+      },
+      {
+        "hour": 14,
+        "member_casual": "member",
+        "trips": 148223,
+        "avg_duration_minutes": 12
+      },
+      {
+        "hour": 15,
+        "member_casual": "casual",
+        "trips": 68575,
+        "avg_duration_minutes": 24
+      },
+      {
+        "hour": 15,
+        "member_casual": "member",
+        "trips": 173068,
+        "avg_duration_minutes": 12
+      },
+      {
+        "hour": 16,
+        "member_casual": "casual",
+        "trips": 76977,
+        "avg_duration_minutes": 22
+      },
+      {
+        "hour": 16,
+        "member_casual": "member",
+        "trips": 239005,
+        "avg_duration_minutes": 12
+      },
+      {
+        "hour": 17,
+        "member_casual": "casual",
+        "trips": 85061,
+        "avg_duration_minutes": 19
+      },
+      {
+        "hour": 17,
+        "member_casual": "member",
+        "trips": 319005,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 18,
+        "member_casual": "casual",
+        "trips": 69063,
+        "avg_duration_minutes": 19
+      },
+      {
+        "hour": 18,
+        "member_casual": "member",
+        "trips": 268484,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 19,
+        "member_casual": "casual",
+        "trips": 44128,
+        "avg_duration_minutes": 19
+      },
+      {
+        "hour": 19,
+        "member_casual": "member",
+        "trips": 187161,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 20,
+        "member_casual": "casual",
+        "trips": 28698,
+        "avg_duration_minutes": 18
+      },
+      {
+        "hour": 20,
+        "member_casual": "member",
+        "trips": 125854,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 21,
+        "member_casual": "casual",
+        "trips": 25985,
+        "avg_duration_minutes": 19
+      },
+      {
+        "hour": 21,
+        "member_casual": "member",
+        "trips": 94441,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 22,
+        "member_casual": "casual",
+        "trips": 21526,
+        "avg_duration_minutes": 21
+      },
+      {
+        "hour": 22,
+        "member_casual": "member",
+        "trips": 64605,
+        "avg_duration_minutes": 11
+      },
+      {
+        "hour": 23,
+        "member_casual": "casual",
+        "trips": 13076,
+        "avg_duration_minutes": 21
+      },
+      {
+        "hour": 23,
+        "member_casual": "member",
+        "trips": 37356,
+        "avg_duration_minutes": 11
+      }
+    ],
+    "tripsByDayOfWeek": [
+      {
+        "day_index": 0,
+        "day_name": "Sunday",
+        "trips": 427874
+      },
+      {
+        "day_index": 1,
+        "day_name": "Monday",
+        "trips": 498382
+      },
+      {
+        "day_index": 2,
+        "day_name": "Tuesday",
+        "trips": 578262
+      },
+      {
+        "day_index": 3,
+        "day_name": "Wednesday",
+        "trips": 592271
+      },
+      {
+        "day_index": 4,
+        "day_name": "Thursday",
+        "trips": 582890
+      },
+      {
+        "day_index": 5,
+        "day_name": "Friday",
+        "trips": 550744
+      },
+      {
+        "day_index": 6,
+        "day_name": "Saturday",
+        "trips": 495407
+      }
+    ],
+    "tripsByMonth": [
+      {
+        "month_name": "Jan",
+        "month_index": "1",
+        "trips": 282914
+      },
+      {
+        "month_name": "Feb",
+        "month_index": "2",
+        "trips": 246802
+      },
+      {
+        "month_name": "Mar",
+        "month_index": "3",
+        "trips": 325001
+      },
+      {
+        "month_name": "Apr",
+        "month_index": "4",
+        "trips": 349145
+      },
+      {
+        "month_name": "May",
+        "month_index": "5",
+        "trips": 381764
+      },
+      {
+        "month_name": "Jun",
+        "month_index": "6",
+        "trips": 378728
+      },
+      {
+        "month_name": "Jul",
+        "month_index": "7",
+        "trips": 388176
+      },
+      {
+        "month_name": "Aug",
+        "month_index": "8",
+        "trips": 429921
+      },
+      {
+        "month_name": "Sep",
+        "month_index": "9",
+        "trips": 458238
+      },
+      {
+        "month_name": "Oct",
+        "month_index": "10",
+        "trips": 485085
+      },
+      {
+        "month_name": "Dec",
+        "month_index": "12",
+        "trips": 56
+      }
+    ],
+    "busiestDays": [
+      {
+        "date": "2025-09-23",
+        "trips": 18211
+      },
+      {
+        "date": "2025-10-29",
+        "trips": 18036
+      },
+      {
+        "date": "2025-10-07",
+        "trips": 17782
+      },
+      {
+        "date": "2025-10-08",
+        "trips": 17596
+      },
+      {
+        "date": "2025-10-09",
+        "trips": 17589
+      },
+      {
+        "date": "2025-10-23",
+        "trips": 17576
+      },
+      {
+        "date": "2025-10-28",
+        "trips": 17575
+      },
+      {
+        "date": "2025-10-18",
+        "trips": 17527
+      },
+      {
+        "date": "2025-10-03",
+        "trips": 17120
+      },
+      {
+        "date": "2025-10-22",
+        "trips": 17101
+      }
+    ],
+    "tripDistanceDistribution": [
+      {
+        "distance_bucket": "0-1 km",
+        "member_casual": "casual",
+        "trips": 184733
+      },
+      {
+        "distance_bucket": "0-1 km",
+        "member_casual": "member",
+        "trips": 761326
+      },
+      {
+        "distance_bucket": "1-2 km",
+        "member_casual": "casual",
+        "trips": 263066
+      },
+      {
+        "distance_bucket": "1-2 km",
+        "member_casual": "member",
+        "trips": 957882
+      },
+      {
+        "distance_bucket": "2-3 km",
+        "member_casual": "casual",
+        "trips": 164477
+      },
+      {
+        "distance_bucket": "2-3 km",
+        "member_casual": "member",
+        "trips": 582990
+      },
+      {
+        "distance_bucket": "3-5 km",
+        "member_casual": "casual",
+        "trips": 154209
+      },
+      {
+        "distance_bucket": "3-5 km",
+        "member_casual": "member",
+        "trips": 493193
+      },
+      {
+        "distance_bucket": "5+ km",
+        "member_casual": "casual",
+        "trips": 50239
+      },
+      {
+        "distance_bucket": "5+ km",
+        "member_casual": "member",
+        "trips": 112325
+      }
+    ],
+    "durationDistribution": [
+      {
+        "duration_bucket": "0-5 min",
+        "member_casual": "casual",
+        "trips": 98501
+      },
+      {
+        "duration_bucket": "0-5 min",
+        "member_casual": "member",
+        "trips": 695085
+      },
+      {
+        "duration_bucket": "10-20 min",
+        "member_casual": "casual",
+        "trips": 268416
+      },
+      {
+        "duration_bucket": "10-20 min",
+        "member_casual": "member",
+        "trips": 927520
+      },
+      {
+        "duration_bucket": "20-30 min",
+        "member_casual": "casual",
+        "trips": 111853
+      },
+      {
+        "duration_bucket": "20-30 min",
+        "member_casual": "member",
+        "trips": 185617
+      },
+      {
+        "duration_bucket": "30+ min",
+        "member_casual": "casual",
+        "trips": 122172
+      },
+      {
+        "duration_bucket": "30+ min",
+        "member_casual": "member",
+        "trips": 84538
+      },
+      {
+        "duration_bucket": "5-10 min",
+        "member_casual": "casual",
+        "trips": 216770
+      },
+      {
+        "duration_bucket": "5-10 min",
+        "member_casual": "member",
+        "trips": 1015358
+      }
+    ],
+    "morningRushHeatmap": [
+      {
+        "lat": "37.309",
+        "lng": "-121.900",
+        "trips": 79
+      },
+      {
+        "lat": "37.311",
+        "lng": "-121.896",
+        "trips": 11
+      },
+      {
+        "lat": "37.315",
+        "lng": "-121.898",
+        "trips": 18
+      },
+      {
+        "lat": "37.317",
+        "lng": "-121.910",
+        "trips": 33
+      },
+      {
+        "lat": "37.317",
+        "lng": "-121.885",
+        "trips": 17
+      },
+      {
+        "lat": "37.319",
+        "lng": "-121.883",
+        "trips": 8
+      },
+      {
+        "lat": "37.320",
+        "lng": "-121.893",
+        "trips": 77
+      },
+      {
+        "lat": "37.320",
+        "lng": "-121.870",
+        "trips": 10
+      },
+      {
+        "lat": "37.321",
+        "lng": "-121.908",
+        "trips": 64
+      },
+      {
+        "lat": "37.321",
+        "lng": "-121.903",
+        "trips": 49
+      },
+      {
+        "lat": "37.321",
+        "lng": "-121.876",
+        "trips": 31
+      },
+      {
+        "lat": "37.322",
+        "lng": "-121.881",
+        "trips": 18
+      },
+      {
+        "lat": "37.323",
+        "lng": "-121.913",
+        "trips": 44
+      },
+      {
+        "lat": "37.323",
+        "lng": "-121.888",
+        "trips": 100
+      },
+      {
+        "lat": "37.324",
+        "lng": "-121.906",
+        "trips": 601
+      },
+      {
+        "lat": "37.324",
+        "lng": "-121.900",
+        "trips": 47
+      },
+      {
+        "lat": "37.324",
+        "lng": "-121.881",
+        "trips": 12
+      },
+      {
+        "lat": "37.324",
+        "lng": "-121.874",
+        "trips": 180
+      },
+      {
+        "lat": "37.326",
+        "lng": "-121.912",
+        "trips": 8
+      },
+      {
+        "lat": "37.326",
+        "lng": "-121.905",
+        "trips": 31
+      },
+      {
+        "lat": "37.326",
+        "lng": "-121.877",
+        "trips": 514
+      },
+      {
+        "lat": "37.327",
+        "lng": "-121.889",
+        "trips": 78
+      },
+      {
+        "lat": "37.328",
+        "lng": "-121.885",
+        "trips": 650
+      },
+      {
+        "lat": "37.329",
+        "lng": "-121.905",
+        "trips": 485
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.910",
+        "trips": 10
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.902",
+        "trips": 1863
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.900",
+        "trips": 11
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.898",
+        "trips": 73
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.890",
+        "trips": 9
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.880",
+        "trips": 6
+      },
+      {
+        "lat": "37.330",
+        "lng": "-121.870",
+        "trips": 7
+      },
+      {
+        "lat": "37.331",
+        "lng": "-121.893",
+        "trips": 43
+      },
+      {
+        "lat": "37.331",
+        "lng": "-121.889",
+        "trips": 156
+      },
+      {
+        "lat": "37.331",
+        "lng": "-121.887",
+        "trips": 8
+      },
+      {
+        "lat": "37.332",
+        "lng": "-121.913",
+        "trips": 796
+      },
+      {
+        "lat": "37.332",
+        "lng": "-121.905",
+        "trips": 785
+      },
+      {
+        "lat": "37.332",
+        "lng": "-121.882",
+        "trips": 86
+      },
+      {
+        "lat": "37.333",
+        "lng": "-121.900",
+        "trips": 47
+      },
+      {
+        "lat": "37.333",
+        "lng": "-121.884",
+        "trips": 361
+      },
+      {
+        "lat": "37.333",
+        "lng": "-121.876",
+        "trips": 138
+      },
+      {
+        "lat": "37.334",
+        "lng": "-121.909",
+        "trips": 751
+      },
+      {
+        "lat": "37.334",
+        "lng": "-121.895",
+        "trips": 196
+      },
+      {
+        "lat": "37.334",
+        "lng": "-121.887",
+        "trips": 269
+      },
+      {
+        "lat": "37.334",
+        "lng": "-121.877",
+        "trips": 366
+      },
+      {
+        "lat": "37.336",
+        "lng": "-121.889",
+        "trips": 506
+      },
+      {
+        "lat": "37.336",
+        "lng": "-121.886",
+        "trips": 737
+      },
+      {
+        "lat": "37.337",
+        "lng": "-121.909",
+        "trips": 40
+      },
+      {
+        "lat": "37.337",
+        "lng": "-121.894",
+        "trips": 667
+      },
+      {
+        "lat": "37.337",
+        "lng": "-121.887",
+        "trips": 319
+      },
+      {
+        "lat": "37.337",
+        "lng": "-121.883",
+        "trips": 185
+      },
+      {
+        "lat": "37.337",
+        "lng": "-121.877",
+        "trips": 138
+      },
+      {
+        "lat": "37.338",
+        "lng": "-121.919",
+        "trips": 139
+      },
+      {
+        "lat": "37.338",
+        "lng": "-121.881",
+        "trips": 166
+      },
+      {
+        "lat": "37.339",
+        "lng": "-121.896",
+        "trips": 94
+      },
+      {
+        "lat": "37.339",
+        "lng": "-121.890",
+        "trips": 58
+      },
+      {
+        "lat": "37.339",
+        "lng": "-121.884",
+        "trips": 105
+      },
+      {
+        "lat": "37.339",
+        "lng": "-121.867",
+        "trips": 49
+      },
+      {
+        "lat": "37.340",
+        "lng": "-121.900",
+        "trips": 9
+      },
+      {
+        "lat": "37.340",
+        "lng": "-121.890",
+        "trips": 14
+      },
+      {
+        "lat": "37.340",
+        "lng": "-121.880",
+        "trips": 36
+      },
+      {
+        "lat": "37.340",
+        "lng": "-121.864",
+        "trips": 87
+      },
+      {
+        "lat": "37.341",
+        "lng": "-121.903",
+        "trips": 71
+      },
+      {
+        "lat": "37.341",
+        "lng": "-121.893",
+        "trips": 286
+      },
+      {
+        "lat": "37.343",
+        "lng": "-121.896",
+        "trips": 527
+      },
+      {
+        "lat": "37.343",
+        "lng": "-121.889",
+        "trips": 117
+      },
+      {
+        "lat": "37.343",
+        "lng": "-121.884",
+        "trips": 243
+      },
+      {
+        "lat": "37.343",
+        "lng": "-121.877",
+        "trips": 65
+      },
+      {
+        "lat": "37.344",
+        "lng": "-121.874",
+        "trips": 55
+      },
+      {
+        "lat": "37.345",
+        "lng": "-121.897",
+        "trips": 73
+      },
+      {
+        "lat": "37.347",
+        "lng": "-121.869",
+        "trips": 46
+      },
+      {
+        "lat": "37.348",
+        "lng": "-121.900",
+        "trips": 40
+      },
+      {
+        "lat": "37.348",
+        "lng": "-121.891",
+        "trips": 155
+      },
+      {
+        "lat": "37.349",
+        "lng": "-121.895",
+        "trips": 57
+      },
+      {
+        "lat": "37.349",
+        "lng": "-121.888",
+        "trips": 178
+      },
+      {
+        "lat": "37.350",
+        "lng": "-121.870",
+        "trips": 11
+      },
+      {
+        "lat": "37.351",
+        "lng": "-121.902",
+        "trips": 62
+      },
+      {
+        "lat": "37.351",
+        "lng": "-121.896",
+        "trips": 159
+      },
+      {
+        "lat": "37.353",
+        "lng": "-121.892",
+        "trips": 71
+      },
+      {
+        "lat": "37.353",
+        "lng": "-121.886",
+        "trips": 30
+      },
+      {
+        "lat": "37.355",
+        "lng": "-121.904",
+        "trips": 14
+      },
+      {
+        "lat": "37.356",
+        "lng": "-121.892",
+        "trips": 130
+      },
+      {
+        "lat": "37.357",
+        "lng": "-121.896",
+        "trips": 46
+      },
+      {
+        "lat": "37.360",
+        "lng": "-121.879",
+        "trips": 21
+      },
+      {
+        "lat": "37.361",
+        "lng": "-121.907",
+        "trips": 31
+      },
+      {
+        "lat": "37.362",
+        "lng": "-121.909",
+        "trips": 59
+      },
+      {
+        "lat": "37.364",
+        "lng": "-121.912",
+        "trips": 18
+      },
+      {
+        "lat": "37.365",
+        "lng": "-121.917",
+        "trips": 26
+      },
+      {
+        "lat": "37.365",
+        "lng": "-121.872",
+        "trips": 94
+      },
+      {
+        "lat": "37.366",
+        "lng": "-121.868",
+        "trips": 16
+      },
+      {
+        "lat": "37.368",
+        "lng": "-121.919",
+        "trips": 42
+      },
+      {
+        "lat": "37.370",
+        "lng": "-121.900",
+        "trips": 14
+      },
+      {
+        "lat": "37.370",
+        "lng": "-121.880",
+        "trips": 8
+      },
+      {
+        "lat": "37.371",
+        "lng": "-121.881",
+        "trips": 31
+      },
+      {
+        "lat": "37.708",
+        "lng": "-122.468",
+        "trips": 57
+      },
+      {
+        "lat": "37.710",
+        "lng": "-122.470",
+        "trips": 11
+      },
+      {
+        "lat": "37.710",
+        "lng": "-122.460",
+        "trips": 13
+      },
+      {
+        "lat": "37.710",
+        "lng": "-122.400",
+        "trips": 7
+      },
+      {
+        "lat": "37.713",
+        "lng": "-122.433",
+        "trips": 27
+      },
+      {
+        "lat": "37.716",
+        "lng": "-122.440",
+        "trips": 22
+      },
+      {
+        "lat": "37.718",
+        "lng": "-122.474",
+        "trips": 91
+      },
+      {
+        "lat": "37.718",
+        "lng": "-122.470",
+        "trips": 21
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.480",
+        "trips": 75
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.460",
+        "trips": 15
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.450",
+        "trips": 88
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.440",
+        "trips": 21
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.434",
+        "trips": 218
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.430",
+        "trips": 26
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.425",
+        "trips": 19
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.390",
+        "trips": 8
+      },
+      {
+        "lat": "37.720",
+        "lng": "-122.380",
+        "trips": 8
+      },
+      {
+        "lat": "37.721",
+        "lng": "-122.479",
+        "trips": 105
+      },
+      {
+        "lat": "37.721",
+        "lng": "-122.448",
+        "trips": 27
+      },
+      {
+        "lat": "37.722",
+        "lng": "-122.483",
+        "trips": 117
+      },
+      {
+        "lat": "37.722",
+        "lng": "-122.462",
+        "trips": 78
+      },
+      {
+        "lat": "37.722",
+        "lng": "-122.444",
+        "trips": 42
+      },
+      {
+        "lat": "37.723",
+        "lng": "-122.455",
+        "trips": 144
+      },
+      {
+        "lat": "37.723",
+        "lng": "-122.447",
+        "trips": 142
+      },
+      {
+        "lat": "37.723",
+        "lng": "-122.438",
+        "trips": 142
+      },
+      {
+        "lat": "37.723",
+        "lng": "-122.392",
+        "trips": 66
+      },
+      {
+        "lat": "37.724",
+        "lng": "-122.459",
+        "trips": 6
+      },
+      {
+        "lat": "37.725",
+        "lng": "-122.461",
+        "trips": 19
+      },
+      {
+        "lat": "37.725",
+        "lng": "-122.443",
+        "trips": 90
+      },
+      {
+        "lat": "37.725",
+        "lng": "-122.394",
+        "trips": 172
+      },
+      {
+        "lat": "37.726",
+        "lng": "-122.479",
+        "trips": 15
+      },
+      {
+        "lat": "37.726",
+        "lng": "-122.477",
+        "trips": 55
+      },
+      {
+        "lat": "37.726",
+        "lng": "-122.464",
+        "trips": 141
+      },
+      {
+        "lat": "37.726",
+        "lng": "-122.452",
+        "trips": 45
+      },
+      {
+        "lat": "37.727",
+        "lng": "-122.435",
+        "trips": 137
+      },
+      {
+        "lat": "37.727",
+        "lng": "-122.407",
+        "trips": 47
+      },
+      {
+        "lat": "37.728",
+        "lng": "-122.452",
+        "trips": 88
+      },
+      {
+        "lat": "37.729",
+        "lng": "-122.393",
+        "trips": 76
+      },
+      {
+        "lat": "37.729",
+        "lng": "-122.387",
+        "trips": 126
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.490",
+        "trips": 10
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.480",
+        "trips": 6
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.470",
+        "trips": 18
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.460",
+        "trips": 6
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.450",
+        "trips": 12
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.440",
+        "trips": 57
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.433",
+        "trips": 59
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.430",
+        "trips": 92
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.420",
+        "trips": 110
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.410",
+        "trips": 22
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.400",
+        "trips": 24
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.399",
+        "trips": 150
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.390",
+        "trips": 48
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.380",
+        "trips": 278
+      },
+      {
+        "lat": "37.730",
+        "lng": "-122.370",
+        "trips": 31
+      },
+      {
+        "lat": "37.731",
+        "lng": "-122.476",
+        "trips": 106
+      },
+      {
+        "lat": "37.731",
+        "lng": "-122.472",
+        "trips": 50
+      },
+      {
+        "lat": "37.731",
+        "lng": "-122.444",
+        "trips": 430
+      },
+      {
+        "lat": "37.732",
+        "lng": "-122.451",
+        "trips": 253
+      },
+      {
+        "lat": "37.732",
+        "lng": "-122.390",
+        "trips": 124
+      },
+      {
+        "lat": "37.733",
+        "lng": "-122.434",
+        "trips": 286
+      },
+      {
+        "lat": "37.733",
+        "lng": "-122.391",
+        "trips": 60
+      },
+      {
+        "lat": "37.735",
+        "lng": "-122.505",
+        "trips": 8
+      },
+      {
+        "lat": "37.735",
+        "lng": "-122.430",
+        "trips": 241
+      },
+      {
+        "lat": "37.736",
+        "lng": "-122.390",
+        "trips": 87
+      },
+      {
+        "lat": "37.737",
+        "lng": "-122.395",
+        "trips": 170
+      },
+      {
+        "lat": "37.738",
+        "lng": "-122.506",
+        "trips": 8
+      },
+      {
+        "lat": "37.739",
+        "lng": "-122.484",
+        "trips": 13
+      },
+      {
+        "lat": "37.739",
+        "lng": "-122.483",
+        "trips": 101
+      },
+      {
+        "lat": "37.739",
+        "lng": "-122.417",
+        "trips": 1486
+      },
+      {
+        "lat": "37.739",
+        "lng": "-122.390",
+        "trips": 86
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.510",
+        "trips": 18
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.500",
+        "trips": 45
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.490",
+        "trips": 13
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.480",
+        "trips": 25
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.470",
+        "trips": 12
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.450",
+        "trips": 23
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.440",
+        "trips": 6
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.430",
+        "trips": 134
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.426",
+        "trips": 540
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.420",
+        "trips": 147
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.410",
+        "trips": 103
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.400",
+        "trips": 8
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.390",
+        "trips": 12
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.383",
+        "trips": 97
+      },
+      {
+        "lat": "37.740",
+        "lng": "-122.377",
+        "trips": 25
+      },
+      {
+        "lat": "37.741",
+        "lng": "-122.466",
+        "trips": 48
+      },
+      {
+        "lat": "37.741",
+        "lng": "-122.389",
+        "trips": 102
+      },
+      {
+        "lat": "37.742",
+        "lng": "-122.507",
+        "trips": 290
+      },
+      {
+        "lat": "37.742",
+        "lng": "-122.499",
+        "trips": 14
+      },
+      {
+        "lat": "37.742",
+        "lng": "-122.423",
+        "trips": 676
+      },
+      {
+        "lat": "37.742",
+        "lng": "-122.387",
+        "trips": 219
+      },
+      {
+        "lat": "37.743",
+        "lng": "-122.483",
+        "trips": 6
+      },
+      {
+        "lat": "37.743",
+        "lng": "-122.479",
+        "trips": 6
+      },
+      {
+        "lat": "37.744",
+        "lng": "-122.427",
+        "trips": 1589
+      },
+      {
+        "lat": "37.744",
+        "lng": "-122.422",
+        "trips": 729
+      },
+      {
+        "lat": "37.744",
+        "lng": "-122.421",
+        "trips": 1203
+      },
+      {
+        "lat": "37.744",
+        "lng": "-122.399",
+        "trips": 48
+      },
+      {
+        "lat": "37.746",
+        "lng": "-122.495",
+        "trips": 48
+      },
+      {
+        "lat": "37.746",
+        "lng": "-122.422",
+        "trips": 816
+      },
+      {
+        "lat": "37.747",
+        "lng": "-122.508",
+        "trips": 114
+      },
+      {
+        "lat": "37.747",
+        "lng": "-122.507",
+        "trips": 52
+      },
+      {
+        "lat": "37.747",
+        "lng": "-122.420",
+        "trips": 1594
+      },
+      {
+        "lat": "37.747",
+        "lng": "-122.411",
+        "trips": 2627
+      },
+      {
+        "lat": "37.748",
+        "lng": "-122.459",
+        "trips": 18
+      },
+      {
+        "lat": "37.748",
+        "lng": "-122.425",
+        "trips": 1026
+      },
+      {
+        "lat": "37.749",
+        "lng": "-122.482",
+        "trips": 88
+      },
+      {
+        "lat": "37.749",
+        "lng": "-122.457",
+        "trips": 7
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.510",
+        "trips": 20
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.500",
+        "trips": 20
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.490",
+        "trips": 12
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.480",
+        "trips": 76
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.470",
+        "trips": 13
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.450",
+        "trips": 8
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.440",
+        "trips": 205
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.430",
+        "trips": 183
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.420",
+        "trips": 559
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.410",
+        "trips": 635
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.400",
+        "trips": 78
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.390",
+        "trips": 439
+      },
+      {
+        "lat": "37.750",
+        "lng": "-122.387",
+        "trips": 128
+      },
+      {
+        "lat": "37.751",
+        "lng": "-122.434",
+        "trips": 2125
+      },
+      {
+        "lat": "37.751",
+        "lng": "-122.428",
+        "trips": 354
+      },
+      {
+        "lat": "37.751",
+        "lng": "-122.412",
+        "trips": 3163
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.499",
+        "trips": 90
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.496",
+        "trips": 164
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.430",
+        "trips": 1372
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.427",
+        "trips": 94
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.426",
+        "trips": 1843
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.421",
+        "trips": 2906
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.419",
+        "trips": 2251
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.406",
+        "trips": 18
+      },
+      {
+        "lat": "37.752",
+        "lng": "-122.405",
+        "trips": 886
+      },
+      {
+        "lat": "37.753",
+        "lng": "-122.509",
+        "trips": 261
+      },
+      {
+        "lat": "37.753",
+        "lng": "-122.504",
+        "trips": 161
+      },
+      {
+        "lat": "37.753",
+        "lng": "-122.421",
+        "trips": 75
+      },
+      {
+        "lat": "37.754",
+        "lng": "-122.488",
+        "trips": 240
+      },
+      {
+        "lat": "37.754",
+        "lng": "-122.484",
+        "trips": 98
+      },
+      {
+        "lat": "37.754",
+        "lng": "-122.479",
+        "trips": 269
+      },
+      {
+        "lat": "37.754",
+        "lng": "-122.413",
+        "trips": 2143
+      },
+      {
+        "lat": "37.755",
+        "lng": "-122.426",
+        "trips": 2333
+      },
+      {
+        "lat": "37.755",
+        "lng": "-122.421",
+        "trips": 2602
+      },
+      {
+        "lat": "37.755",
+        "lng": "-122.413",
+        "trips": 22
+      },
+      {
+        "lat": "37.755",
+        "lng": "-122.404",
+        "trips": 1565
+      },
+      {
+        "lat": "37.755",
+        "lng": "-122.389",
+        "trips": 1815
+      },
+      {
+        "lat": "37.756",
+        "lng": "-122.389",
+        "trips": 18
+      },
+      {
+        "lat": "37.757",
+        "lng": "-122.503",
+        "trips": 279
+      },
+      {
+        "lat": "37.757",
+        "lng": "-122.421",
+        "trips": 2444
+      },
+      {
+        "lat": "37.757",
+        "lng": "-122.406",
+        "trips": 1979
+      },
+      {
+        "lat": "37.758",
+        "lng": "-122.426",
+        "trips": 2311
+      },
+      {
+        "lat": "37.758",
+        "lng": "-122.415",
+        "trips": 626
+      },
+      {
+        "lat": "37.758",
+        "lng": "-122.392",
+        "trips": 6604
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.495",
+        "trips": 210
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.464",
+        "trips": 694
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.437",
+        "trips": 2416
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.422",
+        "trips": 12
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.421",
+        "trips": 2840
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.413",
+        "trips": 2254
+      },
+      {
+        "lat": "37.759",
+        "lng": "-122.410",
+        "trips": 2413
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.510",
+        "trips": 72
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.500",
+        "trips": 51
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.490",
+        "trips": 24
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.480",
+        "trips": 50
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.470",
+        "trips": 81
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.460",
+        "trips": 95
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.450",
+        "trips": 113
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.440",
+        "trips": 546
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.430",
+        "trips": 565
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.420",
+        "trips": 953
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.419",
+        "trips": 2185
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.411",
+        "trips": 3526
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.410",
+        "trips": 637
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.400",
+        "trips": 508
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.390",
+        "trips": 407
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.387",
+        "trips": 3803
+      },
+      {
+        "lat": "37.760",
+        "lng": "-122.380",
+        "trips": 14
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.510",
+        "trips": 505
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.509",
+        "trips": 11
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.433",
+        "trips": 1838
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.432",
+        "trips": 174
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.427",
+        "trips": 167
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.426",
+        "trips": 2384
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.415",
+        "trips": 1994
+      },
+      {
+        "lat": "37.761",
+        "lng": "-122.411",
+        "trips": 115
+      },
+      {
+        "lat": "37.762",
+        "lng": "-122.427",
+        "trips": 16
+      },
+      {
+        "lat": "37.762",
+        "lng": "-122.426",
+        "trips": 7
+      },
+      {
+        "lat": "37.762",
+        "lng": "-122.391",
+        "trips": 3220
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.501",
+        "trips": 599
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.495",
+        "trips": 263
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.484",
+        "trips": 442
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.464",
+        "trips": 746
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.431",
+        "trips": 2014
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.427",
+        "trips": 259
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.426",
+        "trips": 2617
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.422",
+        "trips": 2701
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.408",
+        "trips": 17
+      },
+      {
+        "lat": "37.763",
+        "lng": "-122.407",
+        "trips": 1553
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.510",
+        "trips": 484
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.484",
+        "trips": 9
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.480",
+        "trips": 40
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.479",
+        "trips": 736
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.475",
+        "trips": 515
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.471",
+        "trips": 625
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.467",
+        "trips": 1183
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.464",
+        "trips": 76
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.432",
+        "trips": 2599
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.416",
+        "trips": 1802
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.415",
+        "trips": 31
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.413",
+        "trips": 1946
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.408",
+        "trips": 57
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.407",
+        "trips": 90
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.403",
+        "trips": 296
+      },
+      {
+        "lat": "37.764",
+        "lng": "-122.402",
+        "trips": 29
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.422",
+        "trips": 433
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.420",
+        "trips": 2647
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.410",
+        "trips": 1518
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.403",
+        "trips": 2955
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.399",
+        "trips": 3594
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.395",
+        "trips": 3057
+      },
+      {
+        "lat": "37.765",
+        "lng": "-122.391",
+        "trips": 2605
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.458",
+        "trips": 2141
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.457",
+        "trips": 18
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.449",
+        "trips": 2357
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.431",
+        "trips": 3902
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.427",
+        "trips": 2315
+      },
+      {
+        "lat": "37.766",
+        "lng": "-122.422",
+        "trips": 10
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.464",
+        "trips": 656
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.422",
+        "trips": 1313
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.416",
+        "trips": 19
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.415",
+        "trips": 1155
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.408",
+        "trips": 7
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.407",
+        "trips": 527
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.400",
+        "trips": 1214
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.398",
+        "trips": 1677
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.391",
+        "trips": 986
+      },
+      {
+        "lat": "37.767",
+        "lng": "-122.388",
+        "trips": 302
+      },
+      {
+        "lat": "37.768",
+        "lng": "-122.452",
+        "trips": 3108
+      },
+      {
+        "lat": "37.768",
+        "lng": "-122.420",
+        "trips": 1504
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.459",
+        "trips": 28
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.452",
+        "trips": 56
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.434",
+        "trips": 2904
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.427",
+        "trips": 3347
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.422",
+        "trips": 2755
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.414",
+        "trips": 39
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.413",
+        "trips": 400
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.407",
+        "trips": 1796
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.404",
+        "trips": 1874
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.391",
+        "trips": 1823
+      },
+      {
+        "lat": "37.769",
+        "lng": "-122.386",
+        "trips": 730
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.510",
+        "trips": 37
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.500",
+        "trips": 13
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.490",
+        "trips": 47
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.485",
+        "trips": 7
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.482",
+        "trips": 13
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.480",
+        "trips": 24
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.470",
+        "trips": 62
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.460",
+        "trips": 44
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.450",
+        "trips": 396
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.440",
+        "trips": 420
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.430",
+        "trips": 1025
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.429",
+        "trips": 3251
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.420",
+        "trips": 711
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.415",
+        "trips": 426
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.412",
+        "trips": 1171
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.410",
+        "trips": 472
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.400",
+        "trips": 268
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.391",
+        "trips": 1006
+      },
+      {
+        "lat": "37.770",
+        "lng": "-122.390",
+        "trips": 407
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.511",
+        "trips": 633
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.496",
+        "trips": 11
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.490",
+        "trips": 10
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.480",
+        "trips": 6
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.479",
+        "trips": 30
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.477",
+        "trips": 14
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.445",
+        "trips": 4697
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.443",
+        "trips": 114
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.442",
+        "trips": 3110
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.406",
+        "trips": 2200
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.403",
+        "trips": 2026
+      },
+      {
+        "lat": "37.771",
+        "lng": "-122.401",
+        "trips": 821
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.496",
+        "trips": 452
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.458",
+        "trips": 1174
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.454",
+        "trips": 1736
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.436",
+        "trips": 4925
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.434",
+        "trips": 4314
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.422",
+        "trips": 2103
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.420",
+        "trips": 1870
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.406",
+        "trips": 107
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.404",
+        "trips": 2104
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.398",
+        "trips": 1918
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.393",
+        "trips": 3120
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.390",
+        "trips": 1036
+      },
+      {
+        "lat": "37.772",
+        "lng": "-122.387",
+        "trips": 1065
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.509",
+        "trips": 428
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.471",
+        "trips": 13
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.466",
+        "trips": 1655
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.449",
+        "trips": 3404
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.439",
+        "trips": 3864
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.436",
+        "trips": 26
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.427",
+        "trips": 3929
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.416",
+        "trips": 39
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.404",
+        "trips": 107
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.400",
+        "trips": 759
+      },
+      {
+        "lat": "37.773",
+        "lng": "-122.393",
+        "trips": 37
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.471",
+        "trips": 763
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.443",
+        "trips": 3987
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.427",
+        "trips": 479
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.424",
+        "trips": 4050
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.421",
+        "trips": 2560
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.416",
+        "trips": 1423
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.410",
+        "trips": 23
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.409",
+        "trips": 170
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.402",
+        "trips": 1252
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.392",
+        "trips": 195
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.391",
+        "trips": 3820
+      },
+      {
+        "lat": "37.774",
+        "lng": "-122.212",
+        "trips": 10
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.511",
+        "trips": 252
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.498",
+        "trips": 7
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.465",
+        "trips": 1029
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.458",
+        "trips": 1118
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.447",
+        "trips": 2567
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.446",
+        "trips": 26
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.420",
+        "trips": 6
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.419",
+        "trips": 3816
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.414",
+        "trips": 1226
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.410",
+        "trips": 157
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.409",
+        "trips": 3812
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.398",
+        "trips": 16
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.397",
+        "trips": 1333
+      },
+      {
+        "lat": "37.775",
+        "lng": "-122.224",
+        "trips": 44
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.498",
+        "trips": 773
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.494",
+        "trips": 690
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.453",
+        "trips": 1077
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.438",
+        "trips": 4838
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.437",
+        "trips": 7
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.426",
+        "trips": 3620
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.417",
+        "trips": 6
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.403",
+        "trips": 552
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.395",
+        "trips": 39
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.394",
+        "trips": 1795
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.393",
+        "trips": 4477
+      },
+      {
+        "lat": "37.776",
+        "lng": "-122.388",
+        "trips": 660
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.442",
+        "trips": 3135
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.430",
+        "trips": 3242
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.418",
+        "trips": 43
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.417",
+        "trips": 5911
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.411",
+        "trips": 2663
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.395",
+        "trips": 11103
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.394",
+        "trips": 3611
+      },
+      {
+        "lat": "37.777",
+        "lng": "-122.392",
+        "trips": 19
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.455",
+        "trips": 427
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.442",
+        "trips": 345
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.433",
+        "trips": 3512
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.427",
+        "trips": 55
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.426",
+        "trips": 2658
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.423",
+        "trips": 3554
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.406",
+        "trips": 2483
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.397",
+        "trips": 1930
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.391",
+        "trips": 3147
+      },
+      {
+        "lat": "37.778",
+        "lng": "-122.225",
+        "trips": 6
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.478",
+        "trips": 1006
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.459",
+        "trips": 561
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.447",
+        "trips": 784
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.437",
+        "trips": 2831
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.426",
+        "trips": 12
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.418",
+        "trips": 1586
+      },
+      {
+        "lat": "37.779",
+        "lng": "-122.416",
+        "trips": 3325
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.510",
+        "trips": 73
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.500",
+        "trips": 51
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.490",
+        "trips": 143
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.480",
+        "trips": 103
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.473",
+        "trips": 570
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.470",
+        "trips": 109
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.463",
+        "trips": 885
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.460",
+        "trips": 101
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.450",
+        "trips": 138
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.440",
+        "trips": 383
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.432",
+        "trips": 1379
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.430",
+        "trips": 380
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.420",
+        "trips": 779
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.410",
+        "trips": 615
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.407",
+        "trips": 784
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.400",
+        "trips": 969
+      },
+      {
+        "lat": "37.780",
+        "lng": "-122.390",
+        "trips": 487
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.476",
+        "trips": 429
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.473",
+        "trips": 19
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.456",
+        "trips": 554
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.451",
+        "trips": 12
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.450",
+        "trips": 615
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.447",
+        "trips": 983
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.432",
+        "trips": 201
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.422",
+        "trips": 1814
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.419",
+        "trips": 1688
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.418",
+        "trips": 30
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.412",
+        "trips": 2454
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.405",
+        "trips": 1077
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.400",
+        "trips": 885
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.395",
+        "trips": 1142
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.390",
+        "trips": 3687
+      },
+      {
+        "lat": "37.781",
+        "lng": "-122.233",
+        "trips": 16
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.493",
+        "trips": 543
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.486",
+        "trips": 689
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.483",
+        "trips": 648
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.472",
+        "trips": 556
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.468",
+        "trips": 750
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.466",
+        "trips": 45
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.465",
+        "trips": 1234
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.459",
+        "trips": 1238
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.442",
+        "trips": 37
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.440",
+        "trips": 94
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.439",
+        "trips": 603
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.436",
+        "trips": 958
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.435",
+        "trips": 17
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.419",
+        "trips": 7
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.408",
+        "trips": 9
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.407",
+        "trips": 810
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.405",
+        "trips": 6
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.400",
+        "trips": 2597
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.393",
+        "trips": 1668
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.392",
+        "trips": 115
+      },
+      {
+        "lat": "37.782",
+        "lng": "-122.391",
+        "trips": 1698
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.472",
+        "trips": 17
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.442",
+        "trips": 771
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.440",
+        "trips": 8
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.431",
+        "trips": 93
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.400",
+        "trips": 76
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.393",
+        "trips": 1293
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.391",
+        "trips": 173
+      },
+      {
+        "lat": "37.783",
+        "lng": "-122.388",
+        "trips": 798
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.443",
+        "trips": 1254
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.440",
+        "trips": 29
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.439",
+        "trips": 1707
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.435",
+        "trips": 2444
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.434",
+        "trips": 12
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.431",
+        "trips": 1042
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.412",
+        "trips": 643
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.409",
+        "trips": 32
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.408",
+        "trips": 2293
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.390",
+        "trips": 2522
+      },
+      {
+        "lat": "37.784",
+        "lng": "-122.223",
+        "trips": 11
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.478",
+        "trips": 623
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.439",
+        "trips": 13
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.432",
+        "trips": 2013
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.419",
+        "trips": 46
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.401",
+        "trips": 540
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.396",
+        "trips": 2060
+      },
+      {
+        "lat": "37.785",
+        "lng": "-122.234",
+        "trips": 69
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.428",
+        "trips": 69
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.420",
+        "trips": 12
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.419",
+        "trips": 971
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.409",
+        "trips": 1262
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.405",
+        "trips": 3113
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.400",
+        "trips": 91
+      },
+      {
+        "lat": "37.786",
+        "lng": "-122.398",
+        "trips": 8
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.453",
+        "trips": 1148
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.450",
+        "trips": 972
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.420",
+        "trips": 2375
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.417",
+        "trips": 2406
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.416",
+        "trips": 18
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.414",
+        "trips": 39
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.413",
+        "trips": 2475
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.400",
+        "trips": 182
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.399",
+        "trips": 1194
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.395",
+        "trips": 20
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.394",
+        "trips": 3357
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.388",
+        "trips": 1032
+      },
+      {
+        "lat": "37.787",
+        "lng": "-122.256",
+        "trips": 134
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.439",
+        "trips": 1443
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.435",
+        "trips": 75
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.420",
+        "trips": 272
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.409",
+        "trips": 2599
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.408",
+        "trips": 47
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.398",
+        "trips": 3725
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.396",
+        "trips": 1858
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.395",
+        "trips": 12
+      },
+      {
+        "lat": "37.788",
+        "lng": "-122.392",
+        "trips": 1999
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.445",
+        "trips": 1756
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.435",
+        "trips": 2025
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.420",
+        "trips": 3065
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.415",
+        "trips": 918
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.412",
+        "trips": 916
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.409",
+        "trips": 21
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.408",
+        "trips": 65
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.404",
+        "trips": 6
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.403",
+        "trips": 1583
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.397",
+        "trips": 53
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.392",
+        "trips": 2211
+      },
+      {
+        "lat": "37.789",
+        "lng": "-122.391",
+        "trips": 8
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.490",
+        "trips": 26
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.480",
+        "trips": 91
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.470",
+        "trips": 91
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.460",
+        "trips": 191
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.450",
+        "trips": 110
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.441",
+        "trips": 1465
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.440",
+        "trips": 147
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.430",
+        "trips": 583
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.420",
+        "trips": 715
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.419",
+        "trips": 19
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.415",
+        "trips": 29
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.410",
+        "trips": 705
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.406",
+        "trips": 21
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.405",
+        "trips": 1539
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.402",
+        "trips": 646
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.401",
+        "trips": 811
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.400",
+        "trips": 527
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.394",
+        "trips": 2619
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.391",
+        "trips": 14
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.390",
+        "trips": 1993
+      },
+      {
+        "lat": "37.790",
+        "lng": "-122.242",
+        "trips": 58
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.433",
+        "trips": 3633
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.432",
+        "trips": 27
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.419",
+        "trips": 3674
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.404",
+        "trips": 285
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.401",
+        "trips": 3668
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.399",
+        "trips": 2409
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.396",
+        "trips": 326
+      },
+      {
+        "lat": "37.791",
+        "lng": "-122.391",
+        "trips": 2491
+      },
+      {
+        "lat": "37.792",
+        "lng": "-122.481",
+        "trips": 207
+      },
+      {
+        "lat": "37.792",
+        "lng": "-122.429",
+        "trips": 2412
+      },
+      {
+        "lat": "37.792",
+        "lng": "-122.398",
+        "trips": 7
+      },
+      {
+        "lat": "37.792",
+        "lng": "-122.397",
+        "trips": 2614
+      },
+      {
+        "lat": "37.792",
+        "lng": "-122.391",
+        "trips": 18
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.424",
+        "trips": 134
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.423",
+        "trips": 2975
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.399",
+        "trips": 433
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.398",
+        "trips": 650
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.396",
+        "trips": 377
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.268",
+        "trips": 130
+      },
+      {
+        "lat": "37.793",
+        "lng": "-122.249",
+        "trips": 67
+      },
+      {
+        "lat": "37.794",
+        "lng": "-122.422",
+        "trips": 5060
+      },
+      {
+        "lat": "37.794",
+        "lng": "-122.403",
+        "trips": 988
+      },
+      {
+        "lat": "37.794",
+        "lng": "-122.397",
+        "trips": 39
+      },
+      {
+        "lat": "37.794",
+        "lng": "-122.396",
+        "trips": 1720
+      },
+      {
+        "lat": "37.794",
+        "lng": "-122.254",
+        "trips": 42
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.405",
+        "trips": 965
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.400",
+        "trips": 1158
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.395",
+        "trips": 9515
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.394",
+        "trips": 4109
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.274",
+        "trips": 540
+      },
+      {
+        "lat": "37.795",
+        "lng": "-122.244",
+        "trips": 23
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.417",
+        "trips": 390
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.414",
+        "trips": 22
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.413",
+        "trips": 879
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.395",
+        "trips": 2611
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.394",
+        "trips": 23
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.279",
+        "trips": 84
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.256",
+        "trips": 316
+      },
+      {
+        "lat": "37.796",
+        "lng": "-122.255",
+        "trips": 14
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.456",
+        "trips": 557
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.434",
+        "trips": 3167
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.428",
+        "trips": 329
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.427",
+        "trips": 2446
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.417",
+        "trips": 2499
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.404",
+        "trips": 1490
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.402",
+        "trips": 637
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.399",
+        "trips": 16
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.398",
+        "trips": 1994
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.395",
+        "trips": 44
+      },
+      {
+        "lat": "37.797",
+        "lng": "-122.265",
+        "trips": 385
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.447",
+        "trips": 1648
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.434",
+        "trips": 294
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.424",
+        "trips": 3066
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.423",
+        "trips": 639
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.406",
+        "trips": 2677
+      },
+      {
+        "lat": "37.798",
+        "lng": "-122.263",
+        "trips": 62
+      },
+      {
+        "lat": "37.799",
+        "lng": "-122.443",
+        "trips": 3009
+      },
+      {
+        "lat": "37.799",
+        "lng": "-122.434",
+        "trips": 2504
+      },
+      {
+        "lat": "37.799",
+        "lng": "-122.411",
+        "trips": 665
+      },
+      {
+        "lat": "37.799",
+        "lng": "-122.401",
+        "trips": 1172
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.480",
+        "trips": 19
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.470",
+        "trips": 49
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.460",
+        "trips": 55
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.453",
+        "trips": 260
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.450",
+        "trips": 157
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.440",
+        "trips": 1090
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.433",
+        "trips": 22
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.430",
+        "trips": 927
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.426",
+        "trips": 3054
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.420",
+        "trips": 701
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.411",
+        "trips": 178
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.410",
+        "trips": 745
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.400",
+        "trips": 180
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.399",
+        "trips": 369
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.390",
+        "trips": 67
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.266",
+        "trips": 81
+      },
+      {
+        "lat": "37.800",
+        "lng": "-122.254",
+        "trips": 679
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.433",
+        "trips": 2800
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.411",
+        "trips": 4354
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.275",
+        "trips": 273
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.272",
+        "trips": 284
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.263",
+        "trips": 370
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.248",
+        "trips": 13
+      },
+      {
+        "lat": "37.801",
+        "lng": "-122.247",
+        "trips": 645
+      },
+      {
+        "lat": "37.802",
+        "lng": "-122.456",
+        "trips": 460
+      },
+      {
+        "lat": "37.802",
+        "lng": "-122.425",
+        "trips": 86
+      },
+      {
+        "lat": "37.802",
+        "lng": "-122.424",
+        "trips": 3684
+      },
+      {
+        "lat": "37.802",
+        "lng": "-122.402",
+        "trips": 2859
+      },
+      {
+        "lat": "37.803",
+        "lng": "-122.436",
+        "trips": 3470
+      },
+      {
+        "lat": "37.803",
+        "lng": "-122.415",
+        "trips": 1641
+      },
+      {
+        "lat": "37.803",
+        "lng": "-122.413",
+        "trips": 2805
+      },
+      {
+        "lat": "37.803",
+        "lng": "-122.270",
+        "trips": 117
+      },
+      {
+        "lat": "37.803",
+        "lng": "-122.269",
+        "trips": 172
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.470",
+        "trips": 146
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.468",
+        "trips": 785
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.455",
+        "trips": 389
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.434",
+        "trips": 2549
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.433",
+        "trips": 149
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.416",
+        "trips": 108
+      },
+      {
+        "lat": "37.804",
+        "lng": "-122.262",
+        "trips": 560
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.437",
+        "trips": 2809
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.434",
+        "trips": 159
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.433",
+        "trips": 49
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.423",
+        "trips": 5388
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.416",
+        "trips": 1522
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.414",
+        "trips": 228
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.413",
+        "trips": 9
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.403",
+        "trips": 3552
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.402",
+        "trips": 527
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.295",
+        "trips": 1475
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.275",
+        "trips": 249
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.272",
+        "trips": 218
+      },
+      {
+        "lat": "37.805",
+        "lng": "-122.250",
+        "trips": 173
+      },
+      {
+        "lat": "37.806",
+        "lng": "-122.470",
+        "trips": 458
+      },
+      {
+        "lat": "37.806",
+        "lng": "-122.423",
+        "trips": 208
+      },
+      {
+        "lat": "37.806",
+        "lng": "-122.414",
+        "trips": 2524
+      },
+      {
+        "lat": "37.806",
+        "lng": "-122.286",
+        "trips": 71
+      },
+      {
+        "lat": "37.807",
+        "lng": "-122.412",
+        "trips": 2442
+      },
+      {
+        "lat": "37.807",
+        "lng": "-122.411",
+        "trips": 184
+      },
+      {
+        "lat": "37.807",
+        "lng": "-122.409",
+        "trips": 1850
+      },
+      {
+        "lat": "37.807",
+        "lng": "-122.267",
+        "trips": 196
+      },
+      {
+        "lat": "37.808",
+        "lng": "-122.264",
+        "trips": 138
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.283",
+        "trips": 136
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.270",
+        "trips": 272
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.268",
+        "trips": 451
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.257",
+        "trips": 23
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.256",
+        "trips": 897
+      },
+      {
+        "lat": "37.809",
+        "lng": "-122.249",
+        "trips": 602
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.480",
+        "trips": 9
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.470",
+        "trips": 16
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.450",
+        "trips": 64
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.440",
+        "trips": 100
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.430",
+        "trips": 81
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.420",
+        "trips": 238
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.410",
+        "trips": 253
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.400",
+        "trips": 8
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.280",
+        "trips": 362
+      },
+      {
+        "lat": "37.810",
+        "lng": "-122.268",
+        "trips": 11
+      },
+      {
+        "lat": "37.811",
+        "lng": "-122.292",
+        "trips": 10
+      },
+      {
+        "lat": "37.811",
+        "lng": "-122.291",
+        "trips": 255
+      },
+      {
+        "lat": "37.811",
+        "lng": "-122.273",
+        "trips": 45
+      },
+      {
+        "lat": "37.811",
+        "lng": "-122.265",
+        "trips": 535
+      },
+      {
+        "lat": "37.811",
+        "lng": "-122.243",
+        "trips": 268
+      },
+      {
+        "lat": "37.812",
+        "lng": "-122.296",
+        "trips": 220
+      },
+      {
+        "lat": "37.812",
+        "lng": "-122.285",
+        "trips": 331
+      },
+      {
+        "lat": "37.812",
+        "lng": "-122.261",
+        "trips": 1078
+      },
+      {
+        "lat": "37.813",
+        "lng": "-122.269",
+        "trips": 298
+      },
+      {
+        "lat": "37.813",
+        "lng": "-122.247",
+        "trips": 533
+      },
+      {
+        "lat": "37.815",
+        "lng": "-122.293",
+        "trips": 335
+      },
+      {
+        "lat": "37.815",
+        "lng": "-122.275",
+        "trips": 20
+      },
+      {
+        "lat": "37.815",
+        "lng": "-122.264",
+        "trips": 188
+      },
+      {
+        "lat": "37.816",
+        "lng": "-122.289",
+        "trips": 155
+      },
+      {
+        "lat": "37.816",
+        "lng": "-122.278",
+        "trips": 100
+      },
+      {
+        "lat": "37.816",
+        "lng": "-122.268",
+        "trips": 295
+      },
+      {
+        "lat": "37.817",
+        "lng": "-122.271",
+        "trips": 52
+      },
+      {
+        "lat": "37.818",
+        "lng": "-122.276",
+        "trips": 82
+      },
+      {
+        "lat": "37.819",
+        "lng": "-122.262",
+        "trips": 800
+      },
+      {
+        "lat": "37.823",
+        "lng": "-122.273",
+        "trips": 294
+      },
+      {
+        "lat": "37.823",
+        "lng": "-122.266",
+        "trips": 196
+      },
+      {
+        "lat": "37.823",
+        "lng": "-122.257",
+        "trips": 138
+      },
+      {
+        "lat": "37.824",
+        "lng": "-122.281",
+        "trips": 466
+      },
+      {
+        "lat": "37.824",
+        "lng": "-122.277",
+        "trips": 39
+      },
+      {
+        "lat": "37.825",
+        "lng": "-122.260",
+        "trips": 200
+      },
+      {
+        "lat": "37.826",
+        "lng": "-122.265",
+        "trips": 169
+      },
+      {
+        "lat": "37.826",
+        "lng": "-122.253",
+        "trips": 754
+      },
+      {
+        "lat": "37.827",
+        "lng": "-122.272",
+        "trips": 290
+      },
+      {
+        "lat": "37.828",
+        "lng": "-122.257",
+        "trips": 596
+      },
+      {
+        "lat": "37.829",
+        "lng": "-122.266",
+        "trips": 826
+      },
+      {
+        "lat": "37.830",
+        "lng": "-122.288",
+        "trips": 80
+      },
+      {
+        "lat": "37.830",
+        "lng": "-122.274",
+        "trips": 7
+      },
+      {
+        "lat": "37.830",
+        "lng": "-122.271",
+        "trips": 149
+      },
+      {
+        "lat": "37.831",
+        "lng": "-122.286",
+        "trips": 136
+      },
+      {
+        "lat": "37.831",
+        "lng": "-122.278",
+        "trips": 286
+      },
+      {
+        "lat": "37.831",
+        "lng": "-122.274",
+        "trips": 324
+      },
+      {
+        "lat": "37.833",
+        "lng": "-122.256",
+        "trips": 351
+      },
+      {
+        "lat": "37.834",
+        "lng": "-122.273",
+        "trips": 348
+      },
+      {
+        "lat": "37.834",
+        "lng": "-122.267",
+        "trips": 70
+      },
+      {
+        "lat": "37.834",
+        "lng": "-122.264",
+        "trips": 358
+      },
+      {
+        "lat": "37.835",
+        "lng": "-122.292",
+        "trips": 126
+      },
+      {
+        "lat": "37.836",
+        "lng": "-122.287",
+        "trips": 161
+      },
+      {
+        "lat": "37.836",
+        "lng": "-122.281",
+        "trips": 238
+      },
+      {
+        "lat": "37.836",
+        "lng": "-122.263",
+        "trips": 690
+      },
+      {
+        "lat": "37.836",
+        "lng": "-122.252",
+        "trips": 373
+      },
+      {
+        "lat": "37.837",
+        "lng": "-122.268",
+        "trips": 185
+      },
+      {
+        "lat": "37.838",
+        "lng": "-122.289",
+        "trips": 163
+      },
+      {
+        "lat": "37.838",
+        "lng": "-122.251",
+        "trips": 197
+      },
+      {
+        "lat": "37.839",
+        "lng": "-122.288",
+        "trips": 8
+      },
+      {
+        "lat": "37.839",
+        "lng": "-122.259",
+        "trips": 450
+      },
+      {
+        "lat": "37.840",
+        "lng": "-122.299",
+        "trips": 96
+      },
+      {
+        "lat": "37.840",
+        "lng": "-122.272",
+        "trips": 389
+      },
+      {
+        "lat": "37.840",
+        "lng": "-122.264",
+        "trips": 236
+      },
+      {
+        "lat": "37.840",
+        "lng": "-122.262",
+        "trips": 197
+      },
+      {
+        "lat": "37.841",
+        "lng": "-122.294",
+        "trips": 127
+      },
+      {
+        "lat": "37.841",
+        "lng": "-122.291",
+        "trips": 120
+      },
+      {
+        "lat": "37.842",
+        "lng": "-122.288",
+        "trips": 160
+      },
+      {
+        "lat": "37.842",
+        "lng": "-122.252",
+        "trips": 106
+      },
+      {
+        "lat": "37.843",
+        "lng": "-122.277",
+        "trips": 60
+      },
+      {
+        "lat": "37.843",
+        "lng": "-122.268",
+        "trips": 431
+      },
+      {
+        "lat": "37.844",
+        "lng": "-122.252",
+        "trips": 521
+      },
+      {
+        "lat": "37.845",
+        "lng": "-122.261",
+        "trips": 256
+      },
+      {
+        "lat": "37.847",
+        "lng": "-122.291",
+        "trips": 253
+      },
+      {
+        "lat": "37.847",
+        "lng": "-122.265",
+        "trips": 290
+      },
+      {
+        "lat": "37.848",
+        "lng": "-122.285",
+        "trips": 49
+      },
+      {
+        "lat": "37.849",
+        "lng": "-122.266",
+        "trips": 6
+      },
+      {
+        "lat": "37.849",
+        "lng": "-122.253",
+        "trips": 209
+      },
+      {
+        "lat": "37.850",
+        "lng": "-122.271",
+        "trips": 270
+      },
+      {
+        "lat": "37.850",
+        "lng": "-122.266",
+        "trips": 467
+      },
+      {
+        "lat": "37.850",
+        "lng": "-122.260",
+        "trips": 318
+      },
+      {
+        "lat": "37.851",
+        "lng": "-122.278",
+        "trips": 442
+      },
+      {
+        "lat": "37.851",
+        "lng": "-122.253",
+        "trips": 676
+      },
+      {
+        "lat": "37.853",
+        "lng": "-122.289",
+        "trips": 97
+      },
+      {
+        "lat": "37.853",
+        "lng": "-122.270",
+        "trips": 661
+      },
+      {
+        "lat": "37.856",
+        "lng": "-122.283",
+        "trips": 275
+      },
+      {
+        "lat": "37.856",
+        "lng": "-122.264",
+        "trips": 432
+      },
+      {
+        "lat": "37.856",
+        "lng": "-122.260",
+        "trips": 741
+      },
+      {
+        "lat": "37.858",
+        "lng": "-122.268",
+        "trips": 373
+      },
+      {
+        "lat": "37.858",
+        "lng": "-122.267",
+        "trips": 15
+      },
+      {
+        "lat": "37.858",
+        "lng": "-122.262",
+        "trips": 460
+      },
+      {
+        "lat": "37.859",
+        "lng": "-122.291",
+        "trips": 98
+      },
+      {
+        "lat": "37.859",
+        "lng": "-122.253",
+        "trips": 964
+      },
+      {
+        "lat": "37.860",
+        "lng": "-122.269",
+        "trips": 522
+      },
+      {
+        "lat": "37.862",
+        "lng": "-122.265",
+        "trips": 13
+      },
+      {
+        "lat": "37.862",
+        "lng": "-122.259",
+        "trips": 385
+      },
+      {
+        "lat": "37.862",
+        "lng": "-122.254",
+        "trips": 867
+      },
+      {
+        "lat": "37.863",
+        "lng": "-122.290",
+        "trips": 310
+      },
+      {
+        "lat": "37.863",
+        "lng": "-122.265",
+        "trips": 1010
+      },
+      {
+        "lat": "37.866",
+        "lng": "-122.299",
+        "trips": 222
+      },
+      {
+        "lat": "37.866",
+        "lng": "-122.267",
+        "trips": 504
+      },
+      {
+        "lat": "37.866",
+        "lng": "-122.259",
+        "trips": 448
+      },
+      {
+        "lat": "37.866",
+        "lng": "-122.254",
+        "trips": 414
+      },
+      {
+        "lat": "37.868",
+        "lng": "-122.266",
+        "trips": 326
+      },
+      {
+        "lat": "37.869",
+        "lng": "-122.294",
+        "trips": 8
+      },
+      {
+        "lat": "37.869",
+        "lng": "-122.293",
+        "trips": 114
+      },
+      {
+        "lat": "37.869",
+        "lng": "-122.271",
+        "trips": 456
+      },
+      {
+        "lat": "37.869",
+        "lng": "-122.259",
+        "trips": 318
+      },
+      {
+        "lat": "37.869",
+        "lng": "-122.254",
+        "trips": 478
+      },
+      {
+        "lat": "37.870",
+        "lng": "-122.300",
+        "trips": 129
+      },
+      {
+        "lat": "37.870",
+        "lng": "-122.287",
+        "trips": 207
+      },
+      {
+        "lat": "37.870",
+        "lng": "-122.279",
+        "trips": 297
+      },
+      {
+        "lat": "37.870",
+        "lng": "-122.269",
+        "trips": 7
+      },
+      {
+        "lat": "37.870",
+        "lng": "-122.268",
+        "trips": 783
+      },
+      {
+        "lat": "37.871",
+        "lng": "-122.300",
+        "trips": 8
+      },
+      {
+        "lat": "37.872",
+        "lng": "-122.273",
+        "trips": 452
+      },
+      {
+        "lat": "37.872",
+        "lng": "-122.266",
+        "trips": 342
+      },
+      {
+        "lat": "37.874",
+        "lng": "-122.283",
+        "trips": 425
+      },
+      {
+        "lat": "37.874",
+        "lng": "-122.268",
+        "trips": 203
+      },
+      {
+        "lat": "37.875",
+        "lng": "-122.260",
+        "trips": 419
+      },
+      {
+        "lat": "37.877",
+        "lng": "-122.270",
+        "trips": 299
+      },
+      {
+        "lat": "37.880",
+        "lng": "-122.270",
+        "trips": 666
+      }
+    ],
+    "unusuallyLongTrips": [
+      {
+        "ride_id": "91EB35CEF63F961D",
+        "duration_hours": "25.38",
+        "start_station": "21st St at Valencia St",
+        "end_station": null
+      },
+      {
+        "ride_id": "3DDB847BAB6EB600",
+        "duration_hours": "25.00",
+        "start_station": "Page St at Scott St",
+        "end_station": null
+      },
+      {
+        "ride_id": "4F61A7140981548E",
+        "duration_hours": "25.00",
+        "start_station": "Vine St at Shattuck Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "7F1BE207B24EE50F",
+        "duration_hours": "25.00",
+        "start_station": "Larkin St at California St",
+        "end_station": null
+      },
+      {
+        "ride_id": "BEA92C16A735543D",
+        "duration_hours": "25.00",
+        "start_station": "Laguna St at Hayes St",
+        "end_station": null
+      },
+      {
+        "ride_id": "29F4D6A50E3EE7B9",
+        "duration_hours": "25.00",
+        "start_station": "27th St at San Pablo Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "A6B1375448511F18",
+        "duration_hours": "25.00",
+        "start_station": "Golden Gate Ave at Polk St",
+        "end_station": null
+      },
+      {
+        "ride_id": "63D1C48FDCF67410",
+        "duration_hours": "25.00",
+        "start_station": "Bancroft Way at Telegraph Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "F806FA7E18B176C3",
+        "duration_hours": "25.00",
+        "start_station": "Fountain Alley at S 2nd St",
+        "end_station": null
+      },
+      {
+        "ride_id": "98D8A5AF8D417F6B",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco Ferry Building",
+        "end_station": null
+      },
+      {
+        "ride_id": "B62895B788EFC5A6",
+        "duration_hours": "25.00",
+        "start_station": "Franklin St at 13th St",
+        "end_station": null
+      },
+      {
+        "ride_id": "745DB02DAC9421DB",
+        "duration_hours": "25.00",
+        "start_station": "The Embarcadero at Sansome St",
+        "end_station": null
+      },
+      {
+        "ride_id": "B605F3FAF9C39B3B",
+        "duration_hours": "25.00",
+        "start_station": "Ashton Ave at Holloway Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "75AAF61DCAFEED59",
+        "duration_hours": "25.00",
+        "start_station": "Golden Gate Ave at Polk St",
+        "end_station": null
+      },
+      {
+        "ride_id": "71C88B882D1E1D5B",
+        "duration_hours": "25.00",
+        "start_station": "Golden Gate Ave at Polk St",
+        "end_station": null
+      },
+      {
+        "ride_id": "2142E3ABE99F933D",
+        "duration_hours": "25.00",
+        "start_station": "24th St at Market St",
+        "end_station": null
+      },
+      {
+        "ride_id": "10AB8D123AADAD1E",
+        "duration_hours": "25.00",
+        "start_station": "Terry Francois Blvd at Mission Bay Blvd N",
+        "end_station": null
+      },
+      {
+        "ride_id": "1E6AA7C8CAD3A580",
+        "duration_hours": "25.00",
+        "start_station": "4th St at 16th St",
+        "end_station": null
+      },
+      {
+        "ride_id": "BBCE4451B886EAE9",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco Ferry Building",
+        "end_station": null
+      },
+      {
+        "ride_id": "1B6ABB7EF20B12A4",
+        "duration_hours": "25.00",
+        "start_station": "Oregon St at Adeline St",
+        "end_station": null
+      },
+      {
+        "ride_id": "CAEE892B492EF434",
+        "duration_hours": "25.00",
+        "start_station": "Page St at Masonic Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "8AB12BF75295A13B",
+        "duration_hours": "25.00",
+        "start_station": "1st St at Folsom St",
+        "end_station": null
+      },
+      {
+        "ride_id": "112CADCC9DA1252C",
+        "duration_hours": "25.00",
+        "start_station": "24th St at Market St",
+        "end_station": null
+      },
+      {
+        "ride_id": "59AB9D87330659FD",
+        "duration_hours": "25.00",
+        "start_station": "Indiana St at Cesar Chavez St",
+        "end_station": null
+      },
+      {
+        "ride_id": "EB9C351C8A1F123C",
+        "duration_hours": "25.00",
+        "start_station": "22nd St Caltrain Station",
+        "end_station": null
+      },
+      {
+        "ride_id": "043DF4BE1287DC01",
+        "duration_hours": "25.00",
+        "start_station": "SFSU Park East",
+        "end_station": null
+      },
+      {
+        "ride_id": "CC50E82830BB828E",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": null
+      },
+      {
+        "ride_id": "5550975F5799FB21",
+        "duration_hours": "25.00",
+        "start_station": "San Carlos St at 11th St",
+        "end_station": null
+      },
+      {
+        "ride_id": "C259C50CECD69CEA",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco City Hall",
+        "end_station": null
+      },
+      {
+        "ride_id": "FE0C1A2474020817",
+        "duration_hours": "25.00",
+        "start_station": "Howard St at Beale St",
+        "end_station": null
+      },
+      {
+        "ride_id": "5B8E7A6B10513471",
+        "duration_hours": "25.00",
+        "start_station": "Garfield Square",
+        "end_station": null
+      },
+      {
+        "ride_id": "F5459BB1A7D52716",
+        "duration_hours": "25.00",
+        "start_station": "Fifth St at Delaware St",
+        "end_station": null
+      },
+      {
+        "ride_id": "BB3B8D29C73F62D0",
+        "duration_hours": "25.00",
+        "start_station": "Mint St at Mission St",
+        "end_station": null
+      },
+      {
+        "ride_id": "739BD6EA2E64C311",
+        "duration_hours": "25.00",
+        "start_station": "El Embarcadero at Grand Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "1EAD51EC13CE4354",
+        "duration_hours": "25.00",
+        "start_station": "MacArthur Blvd at Telegraph Ave",
+        "end_station": null
+      },
+      {
+        "ride_id": "3A0DD41292700722",
+        "duration_hours": "25.00",
+        "start_station": "Market St at Steuart St",
+        "end_station": null
+      },
+      {
+        "ride_id": "17D27799B358E97D",
+        "duration_hours": "25.00",
+        "start_station": "Howard St at Beale St",
+        "end_station": null
+      },
+      {
+        "ride_id": "3BFD6D2C19198A84",
+        "duration_hours": "25.00",
+        "start_station": "Polk St at Post St",
+        "end_station": null
+      },
+      {
+        "ride_id": "8FC0175BE8292FB0",
+        "duration_hours": "25.00",
+        "start_station": "Market St at Steuart St",
+        "end_station": null
+      },
+      {
+        "ride_id": "3D1FFD1C8DA12155",
+        "duration_hours": "25.00",
+        "start_station": "Taylor St at 9th St",
+        "end_station": null
+      },
+      {
+        "ride_id": "19A9B6678139144E",
+        "duration_hours": "25.00",
+        "start_station": "San Pedro St at Hedding St",
+        "end_station": null
+      },
+      {
+        "ride_id": "7A6D80C08AEFC860",
+        "duration_hours": "25.00",
+        "start_station": "Indiana St at Cesar Chavez St",
+        "end_station": null
+      },
+      {
+        "ride_id": "C1652DAB6CC04EF6",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco Caltrain Station - Townsend St",
+        "end_station": null
+      },
+      {
+        "ride_id": "E14669D7262E6C34",
+        "duration_hours": "25.00",
+        "start_station": "Valencia St at Duncan St",
+        "end_station": null
+      },
+      {
+        "ride_id": "B5BA9F0DB14287BA",
+        "duration_hours": "25.00",
+        "start_station": "Folsom St at 19th St",
+        "end_station": null
+      },
+      {
+        "ride_id": "B299FD143931A20D",
+        "duration_hours": "25.00",
+        "start_station": "San Francisco City Hall",
+        "end_station": null
+      },
+      {
+        "ride_id": "07343EB6090A9C0A",
+        "duration_hours": "25.00",
+        "start_station": "16th St Mission BART South",
+        "end_station": null
+      },
+      {
+        "ride_id": "B251D7C9B0D19A83",
+        "duration_hours": "25.00",
+        "start_station": "South Park St at 3rd St",
+        "end_station": null
+      },
+      {
+        "ride_id": "384501A2E0BB27CC",
+        "duration_hours": "25.00",
+        "start_station": "Howard St at Beale St",
+        "end_station": null
+      },
+      {
+        "ride_id": "08427AD47FC4EA59",
+        "duration_hours": "25.00",
+        "start_station": "S Van Ness Ave at Market St",
+        "end_station": null
+      }
+    ]
+  }
+}

@@ -1,4 +1,3 @@
-// scripts/ingest-trips.js
 import fs from "fs";
 import path from "path";
 import csv from "csv-parser";
@@ -8,6 +7,7 @@ export async function ingestTrips() {
   const db = new PGlite("./db/pglite");
   const DATA_DIR = "./data/raw";
 
+  // Updated to match the "trips" table and specific column types
   const insertTripSQL = `
     INSERT INTO trips (
       ride_id,
@@ -24,7 +24,7 @@ export async function ingestTrips() {
       duration_seconds
     )
     VALUES (
-      $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12
+      $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12
     )
     ON CONFLICT (ride_id) DO NOTHING;
   `;
@@ -38,6 +38,7 @@ export async function ingestTrips() {
 
     console.log(`➡️  Processing ${file}`);
 
+    // Transactions are critical for speed in PGlite
     await db.exec("BEGIN");
 
     const stream = fs
@@ -46,13 +47,14 @@ export async function ingestTrips() {
 
     try {
       for await (const row of stream) {
+        // Calculate duration on the fly as a float for the REAL column
         const duration =
           (new Date(row.ended_at) - new Date(row.started_at)) / 1000;
 
         await db.query(insertTripSQL, [
           row.ride_id,
           row.rideable_type,
-          row.started_at,
+          row.started_at, 
           row.ended_at,
           row.start_station_id || null,
           row.end_station_id || null,
@@ -79,7 +81,7 @@ export async function ingestTrips() {
       );
     } catch (err) {
       await db.exec("ROLLBACK");
-      console.error(`❌ Failed processing ${file}`);
+      console.error(`❌ Failed processing ${file}:`, err.message);
       throw err;
     }
   }
@@ -87,3 +89,8 @@ export async function ingestTrips() {
   await db.close();
   console.log("📦 Trip ingestion complete");
 }
+
+ingestTrips().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

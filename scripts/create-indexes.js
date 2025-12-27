@@ -1,4 +1,3 @@
-// scripts/create-indexes.js
 import fs from "fs";
 import { PGlite } from "@electric-sql/pglite";
 
@@ -10,3 +9,8 @@ export async function createIndexes() {
   await db.exec(sql);
   await db.close();
 }
+
+createIndexes().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

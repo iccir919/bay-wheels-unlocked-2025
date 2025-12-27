@@ -1,4 +1,3 @@
-// scripts/ingest-stations.js
 import fs from "fs";
 import path from "path";
 import csv from "csv-parser";
@@ -24,7 +23,7 @@ export async function ingestStations() {
       .pipe(csv());
 
     for await (const row of stream) {
-      if (row.start_station_id && row.start_station_name) {
+      if (row.start_station_id && row.start_station_id.trim() !== "" && row.start_station_name) {
         stations.set(row.start_station_id, {
           station_id: row.start_station_id,
           name: row.start_station_name,
@@ -33,7 +32,7 @@ export async function ingestStations() {
         });
       }
 
-      if (row.end_station_id && row.end_station_name) {
+      if (row.end_station_id && row.end_station_id.trim() !== "" && row.end_station_name) {
         stations.set(row.end_station_id, {
           station_id: row.end_station_id,
           name: row.end_station_name,
@@ -80,7 +79,7 @@ export async function ingestStations() {
     await db.exec("COMMIT");
   } catch (err) {
     await db.exec("ROLLBACK");
-    console.error("❌ Station ingestion failed");
+    console.error("❌ Station ingestion failed", err.message);
     throw err;
   }
 
@@ -91,3 +90,8 @@ export async function ingestStations() {
     `✅ Stations ingestion complete: ${inserted.toLocaleString()} stations (${seconds}s)`
   );
 }
+
+ingestStations().catch(err => {
+  console.error(err);
+  process.exit(1);
+});

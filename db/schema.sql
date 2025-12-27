@@ -25,8 +25,8 @@ CREATE TABLE IF NOT EXISTS trips (
 
   rideable_type TEXT NOT NULL,
 
-  started_at TEXT NOT NULL,
-  ended_at TEXT NOT NULL,
+  started_at TIMESTAMP NOT NULL,
+  ended_at TIMESTAMP NOT NULL,
 
   start_station_id TEXT,
   end_station_id TEXT,
