@@ -4,17 +4,15 @@
   "description": "Bay Wheels 2025 trip data analysis using PGlite and frontend visualizations",
   "type": "module",
   "scripts": {
-"dev": "vite frontend",
+    "dev": "vite frontend",
     "build": "vite build frontend",
     "preview": "vite preview frontend",
-    
     "db:init": "node scripts/init-db.js",
     "db:ingest-stations": "node scripts/ingest-stations.js",
     "db:ingest-trips": "node scripts/ingest-trips.js",
     "db:index": "node scripts/create-indexes.js",
     "db:analyze": "node scripts/run-all-analysis.js",
     "db:test": "node scripts/test-queries.js",
-
     "db:full-sync": "node scripts/run-pipeline.js"
   },
   "repository": {
@@ -32,5 +30,9 @@
     "csv-parser": "^3.2.0",
     "path": "^0.12.7",
     "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0"
   }
 }

@@ -20,40 +20,81 @@ export const queries = {
   `,
 
   /* ============================
-     STATION & ROUTE ANALYTICS (Using JOINs)
+     STATION & ROUTE ANALYTICS 
      ============================ */
-  topStationsOverall: `
+  stations: `
     SELECT
+      s.station_id,
       s.name,
-      s.latitude AS lat,
-      s.longitude AS lng,
-      COUNT(t.ride_id) AS departures,
-      COUNT(CASE WHEN t.member_casual = 'member' THEN 1 END) AS member_starts,
-      COUNT(CASE WHEN t.member_casual = 'casual' THEN 1 END) AS casual_starts
+      s.latitude,
+      s.longitude,
+
+      COUNT(t.ride_id) AS total_trips,
+
+      SUM(CASE WHEN t.member_casual = 'member' THEN 1 ELSE 0 END) AS member_trips,
+      SUM(CASE WHEN t.member_casual = 'casual' THEN 1 ELSE 0 END) AS casual_trips,
+
+      SUM(CASE WHEN t.start_station_id = t.end_station_id THEN 1 ELSE 0 END) AS round_trips
+
     FROM stations s
-    JOIN trips t ON s.station_id = t.start_station_id
-    GROUP BY s.station_id, s.name, s.latitude, s.longitude
-    ORDER BY departures DESC
-    LIMIT 50;
+    LEFT JOIN trips t
+      ON s.station_id = t.start_station_id
+      OR s.station_id = t.end_station_id
+
+    WHERE
+      s.name IS NOT NULL
+      AND s.latitude IS NOT NULL
+      AND s.longitude IS NOT NULL
+
+    GROUP BY
+      s.station_id, s.name, s.latitude, s.longitude
+
+    ORDER BY
+      total_trips DESC
   `,
 
-  topRoutes: `
+  topDestinationsPerStation: `
     SELECT
-      s1.name AS start_station,
-      s2.name AS end_station,
-      s1.latitude AS start_lat,
-      s1.longitude AS start_lng,
-      s2.latitude AS end_lat,
-      s2.longitude AS end_lng,
-      COUNT(*) AS trips,
-      CAST(AVG(t.duration_seconds) / 60 AS INTEGER) AS avg_duration_minutes
+      start_station_id,
+      end_station_id,
+      COUNT(*) AS trip_count
+    FROM trips
+    WHERE start_station_id != end_station_id
+    GROUP BY start_station_id, end_station_id
+    ORDER BY start_station_id, trip_count DESC
+  `,
+
+  commonRoutes: `
+    SELECT
+      -- Create the canonical "Station A" and "Station B"
+      CASE WHEN t.start_station_id < t.end_station_id THEN t.start_station_id ELSE t.end_station_id END AS s1_id,
+      CASE WHEN t.start_station_id < t.end_station_id THEN s1.name ELSE s2.name END AS s1_name,
+
+      CASE WHEN t.start_station_id < t.end_station_id THEN t.end_station_id ELSE t.start_station_id END AS s2_id,
+      CASE WHEN t.start_station_id < t.end_station_id THEN s2.name ELSE s1.name END AS s2_name,
+
+      -- Use fixed station coordinates for visualization
+      CASE WHEN t.start_station_id < t.end_station_id THEN s1.latitude ELSE s2.latitude END AS s1_lat,
+      CASE WHEN t.start_station_id < t.end_station_id THEN s1.longitude ELSE s2.longitude END AS s1_lng,
+      CASE WHEN t.start_station_id < t.end_station_id THEN s2.latitude ELSE s1.latitude END AS s2_lat,
+      CASE WHEN t.start_station_id < t.end_station_id THEN s2.longitude ELSE s1.longitude END AS s2_lng,
+
+      -- Aggregated Metrics
+      COUNT(*) AS total_trips,
+      SUM(CASE WHEN t.member_casual = 'member' THEN 1 ELSE 0 END) AS member_trips,
+      SUM(CASE WHEN t.member_casual = 'casual' THEN 1 ELSE 0 END) AS casual_trips,
+      AVG(t.duration_seconds) / 60.0 AS avg_duration_minutes
+
     FROM trips t
     JOIN stations s1 ON t.start_station_id = s1.station_id
     JOIN stations s2 ON t.end_station_id = s2.station_id
-    WHERE t.start_station_id <> t.end_station_id
-    GROUP BY s1.name, s2.name, s1.latitude, s1.longitude, s2.latitude, s2.longitude
-    ORDER BY trips DESC
-    LIMIT 100;
+    WHERE t.start_station_id IS NOT NULL 
+      AND t.end_station_id IS NOT NULL 
+      AND t.start_station_id != t.end_station_id
+
+    GROUP BY 1, 2, 3, 4, 5, 6, 7, 8
+    ORDER BY total_trips DESC
+    LIMIT 1000;
   `,
 
   /* ============================
@@ -94,6 +135,7 @@ tripsByMonth: `
       EXTRACT(MONTH FROM started_at) AS month_index,
       COUNT(*) AS trips
     FROM trips
+    WHERE EXTRACT(YEAR FROM started_at) = 2025
     GROUP BY month_name, month_index
     ORDER BY month_index;
   `,
@@ -149,28 +191,5 @@ tripsByMonth: `
       COUNT(*) AS trips
     FROM trips
     GROUP BY 1, 2 ORDER BY 1;
-  `,
-
-  morningRushHeatmap: `
-    SELECT
-      ROUND(CAST(start_lat AS NUMERIC), 3) AS lat,
-      ROUND(CAST(start_lng AS NUMERIC), 3) AS lng,
-      COUNT(*) AS trips
-    FROM trips
-    WHERE EXTRACT(HOUR FROM started_at) BETWEEN 7 AND 9
-    GROUP BY 1, 2 HAVING COUNT(*) > 5;
-  `,
-
-  unusuallyLongTrips: `
-    SELECT
-      t.ride_id,
-      CAST(t.duration_seconds / 3600.0 AS DECIMAL(10,2)) AS duration_hours,
-      s1.name AS start_station,
-      s2.name AS end_station
-    FROM trips t
-    LEFT JOIN stations s1 ON t.start_station_id = s1.station_id
-    LEFT JOIN stations s2 ON t.end_station_id = s2.station_id
-    WHERE t.duration_seconds > 7200
-    ORDER BY duration_hours DESC LIMIT 50;
   `
 };

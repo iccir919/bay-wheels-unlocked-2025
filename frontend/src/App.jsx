@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from 'react';
+import KpiCard from "./components/KpiCard.jsx";
+import MapView from "./components/MapView.jsx";
+import MapToggle from "./components/MapToggle.jsx";
 
 
 function App() {
 
   const [data, setData] = useState(null);
+  const [mapView, setMapView] = useState("both");
 
   useEffect(() => {
     fetch("/data/master_analysis.json")
@@ -11,6 +15,7 @@ function App() {
       .then(setData)
       .catch(err => console.error("Failed to load data", err));
   }, [])
+
 
   if (!data) {
     return (
@@ -22,24 +27,38 @@ function App() {
   }
 
   const {
-    overview
+    overview,
+    stations,
+    commonRoutes
   } = data.results;
-
+  
   const kpi = overview[0];
-  console.log(kpi)
-
-
 
   return (
     <div className="min-h-screen p-6">
 
-      {/* Header */}
+
       <header className="mb-8">
         <h1 className="text-3xl font-bold">🚲 Bay Wheels Unlocked 2025</h1>
-        <p className="text-slate-500 mt-1">System-wide usage review of data between January and October 2025.</p>
+        <p className="text-slate-500 mt-1">System-wide usage review of data between January and November 2025.</p>
       </header>
 
-      {/* KPIs */}
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <KpiCard icon="📊" label="Total Trips" value={kpi.total_trips.toLocaleString()} />
+        <KpiCard icon="⏱️" label="Avg Duration" value={`${kpi.avg_duration_minutes} min`} />
+        <KpiCard icon="👥" label="Subscribers" value={`${Math.round((kpi.member_trips / kpi.total_trips) * 100)}%`} />
+        <KpiCard icon="⚡" label="Electric Rides" value={kpi.electric_trips.toLocaleString()} />
+      </div>
+
+      <MapToggle value={mapView} onChange={setMapView} />
+
+      <MapView
+        mapView={mapView}
+        stations={stations}
+        routes={commonRoutes}
+      />
+
     </div>
   )
 }
