@@ -3,6 +3,10 @@ import KpiCard from "./components/KpiCard.jsx";
 import MapView from "./components/MapView.jsx";
 import MapToggle from "./components/MapToggle.jsx";
 
+// Charts
+import TopStationsChart from "./components/charts/TopStationsChart";
+import TopRoutesChart from './components/charts/TopRoutesChart.jsx';
+
 
 function App() {
   const [data, setData] = useState(null);
@@ -67,6 +71,20 @@ function App() {
             highlight={highlight}
             onSelect={toggleHighlight}
             onClear={() => setHighlight({ type: null, id: null })}
+          />
+        </div>
+
+        <div className="space-y-3">
+          <TopStationsChart
+            stations={stations}
+            highlight={highlight}
+            onSelect={toggleHighlight}
+          />
+
+          <TopRoutesChart 
+            routes={commonRoutes}
+            highlight={highlight}
+            onSelect={toggleHighlight}
           />
         </div>
       </div>
