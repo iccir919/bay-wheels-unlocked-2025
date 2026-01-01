@@ -4,7 +4,7 @@ export default function MapToggle({ value, onChange }) {
     const options = ["stations", "routes", "both"];
 
     return (
-        <div className="flex space-x-2 mb-4">
+        <div className="flex space-x-2 mt-4">
             {options.map((opt) => (
                 <button
                     key={opt}

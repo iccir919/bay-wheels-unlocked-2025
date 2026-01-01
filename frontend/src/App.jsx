@@ -7,6 +7,7 @@ import MapToggle from "./components/MapToggle.jsx";
 import TopStationsChart from "./components/charts/TopStationsChart";
 import TopRoutesChart from './components/charts/TopRoutesChart.jsx';
 import TripsByHourChart from "./components/charts/TripsByHourChart.jsx";
+import TripsByDayOfWeekChart from "./components/charts/TripsByDayOfWeekChart.jsx";
 
 
 function App() {
@@ -50,7 +51,8 @@ function App() {
     overview,
     stations,
     commonRoutes,
-    tripsByHour
+    tripsByHour,
+    tripsByDayOfWeek
   } = data.results;
   
   const kpi = overview[0];
@@ -74,26 +76,25 @@ function App() {
 
       {/* Map + Top Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="space-y-3">
-          <TopStationsChart
-            stations={stations}
-            highlight={highlight}
-            onSelect={toggleHighlight}
-          />
+        <div className="flex flex-row lg:flex-col gap-4">
+            <div className="flex-1">
+                <TopStationsChart
+                    stations={stations}
+                    highlight={highlight}
+                    onSelect={toggleHighlight}
+                />
+            </div>
 
-          <TopRoutesChart 
-            routes={commonRoutes}
-            highlight={highlight}
-            onSelect={toggleHighlight}
-          />
+            <div className="flex-1">
+                <TopRoutesChart
+                    routes={commonRoutes}
+                    highlight={highlight}
+                    onSelect={toggleHighlight}
+                />
+            </div>
         </div>
 
         <div className="lg:col-span-2">
-          <MapToggle
-            value={mapView}
-            onChange={handleMapModeChange}
-          />
-
           <MapView
             mapView={mapView}
             stations={stations}
@@ -101,6 +102,11 @@ function App() {
             highlight={highlight}
             onSelect={toggleHighlight}
             onClear={() => setHighlight({ type: null, id: null })}
+          />
+
+          <MapToggle
+            value={mapView}
+            onChange={handleMapModeChange}
           />
         </div>
       </div>
@@ -112,6 +118,7 @@ function App() {
       {/* Weekly & Hourly Usage */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <TripsByHourChart data={tripsByHour} />
+        <TripsByDayOfWeekChart data={tripsByDayOfWeek} />
       </div>
 
     </div>

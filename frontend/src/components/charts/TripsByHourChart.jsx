@@ -29,20 +29,20 @@ export default function TripsByHour ({ data }) {
                     <YAxis />
                     <Tooltip
                         formatter={(value, name) => {
-                            if (name === "trips") {
-                                return [`${value.toLocaleString()} trips`, "Trips"];
-                            }
-                            return value;
+                        if (name === "trips") {
+                            return [`${value.toLocaleString()} trips`, "Trips"];
+                        }
+                        return value;
                         }}
-
                         labelFormatter={(hour) => {
-                            const d = data.find(h => h.hour === hour);
-                            return (
-                                `Hour: ${hour}:00\nAvg duration: ${d?.avg_duration_minutes} min`
-                            );
+                        const d = data.find(h => h.hour === hour);
+                        return (
+                            `Hour: ${hour}:00\nAvg duration: ${d?.avg_duration_minutes} min`
+                        );
                         }}
                     />
                     <Bar
+                        fill="#2563eb"
                         dataKey="trips"
                         radius={[6, 6, 0, 0]}
                     />

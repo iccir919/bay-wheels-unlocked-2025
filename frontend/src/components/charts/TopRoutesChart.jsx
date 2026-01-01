@@ -1,8 +1,8 @@
 export default function TopRoutesChart({ routes, highlight, onSelect }) {
-    const topRoutes = routes.slice(0, 4);
+    const topRoutes = routes.slice(0, 3);
 
     return (
-        <div className="bg-white rounded-xl p-4 shadow">
+        <div className="bg-white rounded-xl p-3 shadow">
             <h3 className="font-semibold mb-1">Top Routes</h3>
 
             <ul>

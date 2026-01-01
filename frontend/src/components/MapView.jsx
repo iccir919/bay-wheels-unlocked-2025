@@ -34,7 +34,7 @@ export default function MapView({ mapView, stations, routes, highlight, onSelect
   const stationStyle = (trips, isActive, isDimmed, isHovered) => {
     const t = Math.min(1, Math.max(0, (trips - stationMin) / (stationMax - stationMin)));
 
-    let fillOpacity = 0.5 + 0.3 * t;
+    let fillOpacity = 0.55 + 0.35 * t;
     let radius = 6;
 
     if (isHovered) radius = 9;
@@ -42,49 +42,53 @@ export default function MapView({ mapView, stations, routes, highlight, onSelect
     if (isDimmed) fillOpacity = 0.25;
 
     return {
-      color: "#ec4899",      // pink-500
-      fillColor: "#ec4899",
+      color: "#2563eb",     // blue-600 stroke
+      fillColor: "#3b82f6", // blue-500 fill
       fillOpacity,
-      weight: isActive ? 2 : 1,
+      weight: isActive ? 2.5 : 1.5,
       radius
     };
   };
 
 
+
   const routeStyle = (trips, isActive, isDimmed, isHovered) => {
     const t = Math.min(1, Math.max(0, (trips - routeMin) / (routeMax - routeMin)));
 
-    // Color interpolation (light → saturated)
-    const baseColor = isActive
-      ? "#2563eb" // blue-600
-      : isHovered
-      ? "#3b82f6" // blue-500
-      : `rgba(59, 130, 246, ${0.4 + 0.6 * t})`; // volume-encoded
-
-    let opacity = 0.5 + 0.35 * t;
-    let weight = 4 + 2 * t;
+    // Base soft blue
+    let color = "#60a5fa"; // blue-400
+    let opacity = 0.3 + 0.7 * t;  // keep opacity scaling
+    let weight = 2 + 3 * t;        // slightly thicker base
 
     if (isHovered) {
+      color = "#3b82f6"; // blue-500
       opacity = 0.9;
-      weight = 9;
+      weight = 5 + 1 * t;
     }
 
     if (isActive) {
+      color = "#1d4ed8"; // blue-700
       opacity = 0.95;
-      weight = 11;
+      weight = 6 + 1 * t;
     }
 
     if (isDimmed) {
-      opacity = 0.18;
-      weight = 3;
+      color = "#93c5fd"; // blue-300
+      opacity = 0.1;
+      weight = 1.5;
     }
 
-    return {
-      color: baseColor,
-      weight,
-      opacity,
-    };
+    return { color, weight, opacity };
   };
+
+
+
+
+
+
+
+
+
 
 
 
