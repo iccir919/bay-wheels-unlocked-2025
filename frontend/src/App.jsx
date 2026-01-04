@@ -68,8 +68,22 @@ function App() {
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-3xl font-bold">🚲 Bay Wheels Unlocked 2025</h1>
-        <p className="text-slate-500 mt-1">System-wide usage review of data between January and November 2025.</p>
+        <p className="text-slate-500 mt-1">
+          System-wide usage review of data between January and November 2025.
+        </p>
+        <p className="text-xs text-slate-400 mt-1">
+          Data source:{" "}
+          <a
+            href="https://www.lyft.com/bikes/bay-wheels/system-data"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-slate-600"
+          >
+            Lyft Bay Wheels System Data
+          </a>
+        </p>
       </header>
+
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
