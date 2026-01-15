@@ -69,7 +69,7 @@ function App() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold">🚲 Bay Wheels Unlocked 2025</h1>
         <p className="text-slate-500 mt-1">
-          System-wide usage review of data between January and November 2025.
+          System-wide usage review of data between January through December 2025.
         </p>
         <p className="text-xs text-slate-400 mt-1">
           Data source:{" "}
